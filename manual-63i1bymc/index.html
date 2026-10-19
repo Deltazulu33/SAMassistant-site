@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAM owner manual</title>
+<meta name="description" content="How to set up and use your SAM assistant: connecting the unit, the setup page step by step, daily use on Telegram, updates and troubleshooting.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--ink:rgba(234,235,238,.98);--mute:#b4bfcd;--dim:#8a95a5;--acc:#38bdf8;--line:rgba(234,235,238,.18)}
+*{box-sizing:border-box}
+html{background:rgb(2,6,11)}
+body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:rgb(2,6,11) url("../background.jpg") center/cover no-repeat fixed}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem;padding-bottom:1rem}
+.brand{white-space:nowrap;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+.brand b{color:var(--acc)}
+nav a{color:var(--mute);text-decoration:none;margin-left:1rem}
+nav a.active,nav a:hover{color:var(--acc)}
+main.wrap{background:rgba(255,255,255,.04);border:.5px solid rgba(234,235,238,.22);border-radius:18px;padding:8px 28px 28px;margin-bottom:32px;
+  -webkit-backdrop-filter:blur(10px) saturate(1.25);backdrop-filter:blur(10px) saturate(1.25);
+  box-shadow:3px 3px .5px -3.5px rgba(255,255,255,.30) inset,-2px -2px .5px -2px rgba(255,255,255,.20) inset,0 14px 38px rgba(0,0,0,.34)}
+h1{font-size:2rem;margin:1.5rem 0 .5rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .5rem;scroll-margin-top:1rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .3rem}
+p,li{color:var(--mute)} strong,b{color:var(--ink)} a{color:var(--acc)}
+.lead{font-size:1.1rem}
+.card{background:rgba(2,6,11,.45);border:.5px solid var(--line);border-radius:14px;padding:1rem 1.2rem;margin:1rem 0}
+.note{border-left:3px solid var(--acc);padding:.4rem .9rem;margin:1rem 0;background:rgba(2,6,11,.45);border-radius:0 10px 10px 0}
+ol.steps{padding-left:1.3rem} ol.steps>li{margin:.5rem 0}
+.toc{columns:2;column-gap:2rem;padding-left:1.2rem}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:rgba(2,6,11,.6);border:1px solid var(--line);border-radius:4px;padding:.05rem .35rem;color:var(--ink)}
+footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{color:var(--dim)}
+@media (max-width:560px){.toc{columns:1}h1{font-size:1.6rem}main.wrap{padding:4px 16px 20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="../">SAM <b>assistant</b></a>
+  <nav><a href="../">Home</a><a href="./" class="active">Manual</a><a href="https://t.me/Contact_SAM_bot">Contact</a></nav>
+</div></header>
+
+<main class="wrap">
+<h1>Owner manual</h1>
+<p class="lead">Everything you need to set up SAM and live with it. In this manual your assistant is called SAM; during setup you can give it any name you like.</p>
+
+<div class="card"><b>Contents</b>
+<ol class="toc">
+  <li><a href="#box">In the box</a></li>
+  <li><a href="#before">Before you start</a></li>
+  <li><a href="#connect">Connecting the unit</a></li>
+  <li><a href="#setup">The setup page, step by step</a></li>
+  <li><a href="#daily">Using SAM every day</a></li>
+  <li><a href="#notes">Your notes</a></li>
+  <li><a href="#updates">Updates</a></li>
+  <li><a href="#trouble">When something is wrong</a></li>
+  <li><a href="#privacy">Privacy and safety</a></li>
+</ol></div>
+
+<h2 id="box">1. In the box</h2>
+<ul>
+  <li>The SAM unit: a Raspberry Pi 5 in its case with a cooling fan and an SSD inside. A sticker on the case shows the unit's name (for example <code>shrike-6746</code>).</li>
+  <li>The official power supply.</li>
+  <li>A small memory card already in the unit. SAM runs from it until the last setup step moves everything to the SSD.</li>
+  <li>A network cable.</li>
+</ul>
+
+<h2 id="before">2. Before you start</h2>
+<ul>
+  <li><b>A Claude subscription</b> (Pro or Max) in your own name, from claude.ai. SAM thinks with Claude through your account; this is the running cost.</li>
+  <li><b>Telegram</b> on your phone.</li>
+  <li><b>A screen, keyboard and mouse</b> for the unit, for the setup evening only. The screen needs a micro-HDMI cable or adapter.</li>
+  <li>About an hour.</li>
+</ul>
+
+<h2 id="connect">3. Connecting the unit</h2>
+<ol class="steps">
+  <li>Connect the network cable from the unit to your router. A cable is more reliable than wifi; if you can, leave it plugged in for good.</li>
+  <li>Connect the screen, keyboard and mouse.</li>
+  <li>Plug in the power supply. The unit starts by itself; there is no power button to press.</li>
+  <li>When the desktop appears, double-click the <b>Setup</b> icon. The setup page opens.</li>
+</ol>
+<div class="note">You can also continue from your phone or laptop: on the setup page, open <b>Start here &gt; Carry on from a phone or laptop</b>. It shows the address to open and a setup password. Your phone or laptop must be on the same home network.</div>
+
+<h2 id="setup">4. The setup page, step by step</h2>
+<p>The setup page lists the steps under <b>Start here</b>. Do them in order; each one turns grey when it is done. You can close the page and come back at any time: double-click Setup again.</p>
+
+<h3>Step 1. Basics</h3>
+<p>Choose your assistant's name, fill in your name, your email and your timezone, and the name of your notes folder. Under <b>Network</b> you can tick that the unit is on a cable and, if you know how, reserve a fixed address for it in your router. Wifi can be set up here too.</p>
+
+<h3>Step 2. Telegram bot</h3>
+<p>You make your own private bot in Telegram, in about two minutes:</p>
+<ol>
+  <li>On your phone, open <b>BotFather</b> (scan the code on the page or press Open BotFather). Check it has the blue tick.</li>
+  <li>Tap <b>Start</b>, then <b>Create a new bot</b> (or send <code>/newbot</code>).</li>
+  <li>Name: your assistant's name. Username: something unique that ends in <code>bot</code>; the page suggests one.</li>
+  <li>BotFather answers with a long token. Copy it and paste it on the setup page, then press <b>Store token</b>.</li>
+</ol>
+
+<h3>Step 3. Home Assistant and router (optional)</h3>
+<p>If you use Home Assistant, SAM can work with it: paste its address and a long-lived access token. You can also allow SAM to look after your internet router. That gives it the keys to your network, so leave it off if unsure. Not needed? Press <b>Skip, not now</b>.</p>
+
+<h3>Step 4. Your questions</h3>
+<p>About fifteen short questions, mostly ticks and choices: how SAM should talk to you, which lists to keep, what it must always ask you about first. Safe choices are already filled in. You can change any answer later by telling SAM on Telegram.</p>
+
+<h3>Step 5. Build SAM's settings</h3>
+<p>One button that turns everything above into SAM's settings and rulebook. Press it again whenever you change something in steps 1 to 4.</p>
+
+<h3>Step 6. Sign in to Claude</h3>
+<p>Do this step on the unit itself. The button opens a black window with Claude in it:</p>
+<ol>
+  <li>Claude asks a few first-time questions (colour scheme and so on). Press Enter to accept each.</li>
+  <li>The browser opens claude.ai. Sign in with your Claude account and press <b>Authorize</b>.</li>
+  <li>Back in the black window, when Claude shows its input line, close the window.</li>
+</ol>
+
+<h3>Step 7. Start SAM</h3>
+<p>Switches SAM on. From now on it starts by itself whenever the unit gets power.</p>
+
+<h3>Step 8. Pair your phone</h3>
+<p>On your phone, open the chat with your new bot and send <b>hi</b>. The bot answers with a code; the same code appears on the setup page within a few seconds. Press <b>This is me</b>. Only paired phones can talk to SAM. Use <b>Add another phone</b> for a partner's phone.</p>
+
+<h3>Step 9. Gmail and Google Calendar</h3>
+<p>SAM works with Google (Gmail) accounts. Best done now, while the screen and keyboard are attached:</p>
+<ol>
+  <li>On claude.ai, signed in with the same Claude account, open <b>Customize &gt; Connectors</b>.</li>
+  <li>At <b>Google Calendar</b>, press <b>+</b>, choose your Google account and allow access. Do the same for <b>Gmail</b>.</li>
+  <li>Back on the setup page, press <b>Check connection</b>. It takes up to a minute.</li>
+</ol>
+<p>Not now? Choose <b>Not now</b>; you can add it later by asking SAM.</p>
+
+<h3>Step 10. Your notes in Obsidian</h3>
+<p>Double-click the <b>Obsidian</b> icon on the desktop. It opens straight into SAM's notes folder. The step ticks itself once Obsidian has opened.</p>
+
+<h3>Step 11. Move to the SSD (last step)</h3>
+<p>Do this once, when everything above works. It copies the whole system from the memory card to the faster, longer-lasting SSD. It takes 5 to 15 minutes; do not switch off while it runs. When the page says the copy is finished:</p>
+<ol>
+  <li>Raspberry menu &gt; <b>Shutdown</b>.</li>
+  <li>Take the small memory card out of the unit. Keep it as a spare.</li>
+  <li>Switch on again. Step 11 ticks itself once SAM runs from the SSD.</li>
+</ol>
+<p>Then send SAM a message from your phone. You can now disconnect the screen, keyboard and mouse; SAM runs without them.</p>
+
+<h2 id="daily">5. Using SAM every day</h2>
+<p>Write to SAM in Telegram as you would to a person. Some examples:</p>
+<ul>
+  <li>"Add <i>call the plumber</i> to my to-do list."</li>
+  <li>"What is on my calendar tomorrow?"</li>
+  <li>"What did I note about the boat last week?"</li>
+  <li>"Make a note of this:" followed by a forwarded message or a photo.</li>
+  <li>"From now on, always ask me before you email anyone." Rules you give it are kept.</li>
+</ul>
+<p>SAM confirms what it did. If it is about to do something on your "always ask first" list, it asks and waits for your answer.</p>
+
+<h2 id="notes">6. Your notes</h2>
+<p>Everything SAM writes down lives in the notes folder on the unit: to-do lists, a daily log, your notes. Open it any time with Obsidian on the unit. To see the same notes on your phone and computer you need Obsidian Sync, a paid extra from Obsidian in your own name (Obsidian &gt; Settings &gt; General &gt; Account, then Core plugins &gt; Sync). Without it, SAM works just the same.</p>
+
+<h2 id="updates">7. Updates</h2>
+<p>SAM checks for a new version once a day. When there is one, it tells you on Telegram what changes. Nothing is installed unless you reply exactly <b>Yes, install now</b>. Reply <b>no</b> to skip that version. SAM restarts once, takes about a minute, and reports back. If an update ever goes wrong, the previous version is put back automatically.</p>
+<p>You can also ask: "check for updates".</p>
+
+<h2 id="trouble">8. When something is wrong</h2>
+<h3>SAM does not answer</h3>
+<ul>
+  <li>Check the unit has power and the network cable is in.</li>
+  <li>Unplug the power, wait ten seconds, plug it back in. SAM starts by itself within a few minutes.</li>
+</ul>
+<h3>SAM only answers "Acknowledged"</h3>
+<p>Your message arrived, but Claude cannot think right now: either SAM has been logged out of your Claude account, or your subscription's usage limit has been reached for the moment. Usage limits reset by themselves after a few hours.</p>
+<h3>SAM says it has been logged out</h3>
+<p>SAM sends you a Telegram alert when it loses its Claude login. Open Setup on the unit and do <b>step 6, Sign in to Claude</b> again. SAM restarts and tells you it is back.</p>
+<h3>After a power failure</h3>
+<p>Nothing to do. SAM starts by itself when the power returns.</p>
+<h3>Still stuck?</h3>
+<p>Email <a href="mailto:dennis@ssaprop.com">dennis@ssaprop.com</a> or message us on Telegram at <a href="https://t.me/Contact_SAM_bot">@Contact_SAM_bot</a> with what you see. Nobody can log in to your unit from outside, so a photo of the screen helps.</p>
+
+<h2 id="privacy">9. Privacy and safety</h2>
+<ul>
+  <li>Your notes and settings live on your unit, in your home.</li>
+  <li>To think, SAM sends your messages to Claude through your own Claude account, under Anthropic's terms for that account. Calendar and email are reached through the connectors you approved on claude.ai, and you can remove them there at any time.</li>
+  <li>Only phones you paired can talk to SAM.</li>
+  <li>Passwords and access keys are typed by you on the unit or its setup page; never send them in a chat.</li>
+  <li>SAM is a helper, not a decision-maker. Check anything important before you rely on it.</li>
+</ul>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Dennis Bouwers. SAM assistant is not made by or affiliated with Anthropic or Telegram. Claude is a trademark of Anthropic. &middot; <a href="../">Home</a> &middot; Background: Frosted Glass themes by wessamlauf (<a href="../LICENSE-background.txt">MIT</a>)</div></footer>
+</body>
+</html>
