@@ -62,7 +62,7 @@
     <text x="1292" y="611" font-size="23" fill="#94a3b8">Your memory lives at home,</text>
     <text x="1292" y="641" font-size="23" fill="#94a3b8">not in someone else's cloud.</text>
     <circle cx="1265" cy="705" r="9" fill="#38bdf8"/>
-    <text x="1292" y="714" font-size="30" font-weight="700" fill="#e2e8f0">Contact</text>
+    <text x="1292" y="714" font-size="30" font-weight="700" fill="#e2e8f0">Contact (Telegram)</text>
     <text x="1292" y="750" font-size="23" fill="#38bdf8">t.me/Contact_SAM_bot</text>
   </g>
   <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
