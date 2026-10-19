@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1840 985" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+  <rect width="1840" height="985" fill="#0d1117"/>
+  <g stroke="#475569" stroke-width="3" fill="none">
+    <line x1="480" y1="375" x2="720" y2="375" stroke="#94a3b8" stroke-width="6"/>
+    <line x1="600" y1="90" x2="480" y2="375"/>
+    <line x1="600" y1="90" x2="720" y2="375"/>
+    <line x1="897" y1="144" x2="720" y2="375"/>
+    <line x1="1080" y1="287" x2="720" y2="375"/>
+    <line x1="1080" y1="463" x2="720" y2="375"/>
+    <line x1="897" y1="606" x2="480" y2="375"/>
+    <line x1="897" y1="606" x2="720" y2="375"/>
+    <line x1="600" y1="660" x2="480" y2="375"/>
+    <line x1="600" y1="660" x2="720" y2="375"/>
+    <line x1="303" y1="606" x2="480" y2="375"/>
+    <line x1="120" y1="463" x2="480" y2="375"/>
+    <line x1="120" y1="287" x2="480" y2="375"/>
+    <line x1="303" y1="144" x2="480" y2="375"/>
+  </g>
+  <g text-anchor="middle" font-weight="600">
+    <circle cx="480" cy="375" r="115" fill="#38bdf8"/>
+    <text x="480" y="390" font-size="46" fill="#0d1117" font-weight="800">SAM</text>
+    <circle cx="720" cy="375" r="115" fill="#a78bfa"/>
+    <text x="720" y="388" font-size="38" fill="#0d1117" font-weight="800">Memory</text>
+    <g fill="#161b22" stroke-width="3">
+      <circle cx="600" cy="90" r="72" stroke="#e2e8f0"/>
+      <circle cx="897" cy="144" r="72" stroke="#a78bfa"/>
+      <circle cx="1080" cy="287" r="72" stroke="#a78bfa"/>
+      <circle cx="1080" cy="463" r="72" stroke="#a78bfa"/>
+      <circle cx="897" cy="606" r="72" stroke="#e2e8f0"/>
+      <circle cx="600" cy="660" r="72" stroke="#e2e8f0"/>
+      <circle cx="303" cy="606" r="72" stroke="#38bdf8"/>
+      <circle cx="120" cy="463" r="72" stroke="#38bdf8"/>
+      <circle cx="120" cy="287" r="72" stroke="#38bdf8"/>
+      <circle cx="303" cy="144" r="72" stroke="#38bdf8"/>
+    </g>
+    <g font-size="22" fill="#e2e8f0">
+      <text x="600" y="98">Reminders</text>
+      <text x="897" y="152">History</text>
+      <text x="1080" y="282">Personal</text><text x="1080" y="308">details</text>
+      <text x="1080" y="471">Projects</text>
+      <text x="897" y="601">Remember</text><text x="897" y="627">when</text>
+      <text x="600" y="668">Recall</text>
+      <text x="303" y="614">Calendar</text>
+      <text x="120" y="457">Tasks</text><text x="120" y="481" font-size="14" font-weight="400" fill="#94a3b8">once-off or</text><text x="120" y="498" font-size="14" font-weight="400" fill="#94a3b8">repeating</text>
+      <text x="120" y="295">Email</text>
+      <text x="303" y="139" font-size="19">Home</text><text x="303" y="165" font-size="19">automation</text>
+    </g>
+  </g>
+  <line x1="1215" y1="130" x2="1215" y2="700" stroke="#1f2733" stroke-width="2"/>
+  <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+    <circle cx="1265" cy="206" r="9" fill="#38bdf8"/>
+    <text x="1292" y="215" font-size="30" font-weight="700" fill="#e2e8f0">Off the shelf</text>
+    <text x="1292" y="251" font-size="23" fill="#94a3b8">Ready to plug in.</text>
+    <circle cx="1265" cy="326" r="9" fill="#38bdf8"/>
+    <text x="1292" y="335" font-size="30" font-weight="700" fill="#e2e8f0">No programming</text>
+    <text x="1292" y="371" font-size="23" fill="#94a3b8">Just answer a few set-up questions.</text>
+    <circle cx="1265" cy="446" r="9" fill="#38bdf8"/>
+    <text x="1292" y="455" font-size="30" font-weight="700" fill="#e2e8f0">Small box</text>
+    <text x="1292" y="491" font-size="23" fill="#94a3b8">Place it anywhere. Works on wifi.</text>
+    <circle cx="1265" cy="566" r="9" fill="#38bdf8"/>
+    <text x="1292" y="575" font-size="30" font-weight="700" fill="#e2e8f0">Secure</text>
+    <text x="1292" y="611" font-size="23" fill="#94a3b8">Your memory lives at home,</text>
+    <text x="1292" y="641" font-size="23" fill="#94a3b8">not in someone else's cloud.</text>
+    <circle cx="1265" cy="705" r="9" fill="#38bdf8"/>
+    <text x="1292" y="714" font-size="30" font-weight="700" fill="#e2e8f0">Contact</text>
+    <text x="1292" y="750" font-size="23" fill="#38bdf8">t.me/Contact_SAM_bot</text>
+  </g>
+  <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+    <line x1="60" y1="800" x2="1780" y2="800" stroke="#1f2733" stroke-width="2"/>
+    <text x="60" y="840" font-size="26" font-weight="700" fill="#e2e8f0">The only prerequisites</text>
+    <g font-size="21" fill="#94a3b8">
+      <circle cx="68" cy="882" r="6" fill="#38bdf8"/><text x="84" y="889">Telegram app on your phone</text>
+      <circle cx="68" cy="920" r="6" fill="#38bdf8"/><text x="84" y="927">Home internet (wifi or cable)</text>
+      <circle cx="560" cy="882" r="6" fill="#38bdf8"/><text x="576" y="889">Paid Claude subscription</text>
+      <circle cx="560" cy="920" r="6" fill="#38bdf8"/><text x="576" y="927">Monitor, keyboard and mouse, for setup only</text>
+      <circle cx="1100" cy="882" r="6" fill="#a78bfa"/><text x="1116" y="889">Optional: Obsidian Sync subscription,</text>
+      <text x="1116" y="917">to see your memory and notes</text><text x="1116" y="945">on your other devices</text>
+    </g>
+  </g>
+</svg>
