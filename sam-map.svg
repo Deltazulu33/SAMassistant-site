@@ -4,17 +4,18 @@
     <line x1="480" y1="375" x2="720" y2="375" stroke="#94a3b8" stroke-width="6"/>
     <line x1="600" y1="90" x2="480" y2="375"/>
     <line x1="600" y1="90" x2="720" y2="375"/>
-    <line x1="897" y1="144" x2="720" y2="375"/>
-    <line x1="1080" y1="287" x2="720" y2="375"/>
-    <line x1="1080" y1="463" x2="720" y2="375"/>
-    <line x1="897" y1="606" x2="480" y2="375"/>
-    <line x1="897" y1="606" x2="720" y2="375"/>
-    <line x1="600" y1="660" x2="480" y2="375"/>
-    <line x1="600" y1="660" x2="720" y2="375"/>
-    <line x1="303" y1="606" x2="480" y2="375"/>
-    <line x1="120" y1="463" x2="480" y2="375"/>
-    <line x1="120" y1="287" x2="480" y2="375"/>
-    <line x1="303" y1="144" x2="480" y2="375"/>
+    <line x1="873" y1="135" x2="720" y2="375"/>
+    <line x1="1059" y1="257" x2="720" y2="375"/>
+    <line x1="1100" y1="416" x2="720" y2="375"/>
+    <line x1="982" y1="562" x2="480" y2="375"/>
+    <line x1="982" y1="562" x2="720" y2="375"/>
+    <line x1="742" y1="648" x2="480" y2="375"/>
+    <line x1="742" y1="648" x2="720" y2="375"/>
+    <line x1="458" y1="648" x2="480" y2="375"/>
+    <line x1="218" y1="562" x2="480" y2="375"/>
+    <line x1="100" y1="416" x2="480" y2="375"/>
+    <line x1="141" y1="257" x2="480" y2="375"/>
+    <line x1="327" y1="135" x2="480" y2="375"/>
   </g>
   <g text-anchor="middle" font-weight="600">
     <circle cx="480" cy="375" r="115" fill="#38bdf8"/>
@@ -23,27 +24,29 @@
     <text x="720" y="388" font-size="38" fill="#0d1117" font-weight="800">Memory</text>
     <g fill="rgb(16,22,32)" stroke-width="3">
       <circle cx="600" cy="90" r="72" stroke="#e2e8f0"/>
-      <circle cx="897" cy="144" r="72" stroke="#a78bfa"/>
-      <circle cx="1080" cy="287" r="72" stroke="#a78bfa"/>
-      <circle cx="1080" cy="463" r="72" stroke="#a78bfa"/>
-      <circle cx="897" cy="606" r="72" stroke="#e2e8f0"/>
-      <circle cx="600" cy="660" r="72" stroke="#e2e8f0"/>
-      <circle cx="303" cy="606" r="72" stroke="#38bdf8"/>
-      <circle cx="120" cy="463" r="72" stroke="#38bdf8"/>
-      <circle cx="120" cy="287" r="72" stroke="#38bdf8"/>
-      <circle cx="303" cy="144" r="72" stroke="#38bdf8"/>
+      <circle cx="873" cy="135" r="72" stroke="#a78bfa"/>
+      <circle cx="1059" cy="257" r="72" stroke="#a78bfa"/>
+      <circle cx="1100" cy="416" r="72" stroke="#a78bfa"/>
+      <circle cx="982" cy="562" r="72" stroke="#e2e8f0"/>
+      <circle cx="742" cy="648" r="72" stroke="#e2e8f0"/>
+      <circle cx="458" cy="648" r="72" stroke="#38bdf8"/>
+      <circle cx="218" cy="562" r="72" stroke="#38bdf8"/>
+      <circle cx="100" cy="416" r="72" stroke="#38bdf8"/>
+      <circle cx="141" cy="257" r="72" stroke="#38bdf8"/>
+      <circle cx="327" cy="135" r="72" stroke="#38bdf8"/>
     </g>
     <g font-size="22" fill="#e2e8f0">
       <text x="600" y="98">Reminders</text>
-      <text x="897" y="152">History</text>
-      <text x="1080" y="282">Personal</text><text x="1080" y="308">details</text>
-      <text x="1080" y="471">Projects</text>
-      <text x="897" y="601">Remember</text><text x="897" y="627">when</text>
-      <text x="600" y="668">Recall</text>
-      <text x="303" y="614">Calendar</text>
-      <text x="120" y="457">Tasks</text><text x="120" y="481" font-size="14" font-weight="400" fill="#94a3b8">once-off or</text><text x="120" y="498" font-size="14" font-weight="400" fill="#94a3b8">repeating</text>
-      <text x="120" y="284">Email</text><text x="120" y="306" font-size="14" font-weight="400" fill="#94a3b8">send / receive</text><text x="120" y="323" font-size="14" font-weight="400" fill="#94a3b8">/ sort</text>
-      <text x="303" y="139" font-size="19">Home</text><text x="303" y="165" font-size="19">automation</text>
+      <text x="873" y="143">History</text>
+      <text x="1059" y="252">Personal</text><text x="1059" y="278">details</text>
+      <text x="1100" y="424">Projects</text>
+      <text x="982" y="557">Remember</text><text x="982" y="583">when</text>
+      <text x="742" y="656">Recall</text>
+      <text x="458" y="628">Create</text><text x="458" y="650" font-size="13" font-weight="400" fill="#94a3b8">notes /</text><text x="458" y="666" font-size="13" font-weight="400" fill="#94a3b8">spreadsheets /</text><text x="458" y="682" font-size="13" font-weight="400" fill="#94a3b8">presentations</text>
+      <text x="218" y="570">Calendar</text>
+      <text x="100" y="405">Tasks</text><text x="100" y="427" font-size="14" font-weight="400" fill="#94a3b8">once-off or</text><text x="100" y="444" font-size="14" font-weight="400" fill="#94a3b8">repeating</text>
+      <text x="141" y="246">Email</text><text x="141" y="268" font-size="14" font-weight="400" fill="#94a3b8">send / receive</text><text x="141" y="285" font-size="14" font-weight="400" fill="#94a3b8">/ sort</text>
+      <text x="327" y="130" font-size="19">Home</text><text x="327" y="156" font-size="19">automation</text>
     </g>
   </g>
   <line x1="1215" y1="130" x2="1215" y2="700" stroke="#1f2733" stroke-width="2"/>
