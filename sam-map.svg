@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1840 985" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
-  <rect width="1840" height="985" fill="#0d1117"/>
+  
   <g stroke="#475569" stroke-width="3" fill="none">
     <line x1="480" y1="375" x2="720" y2="375" stroke="#94a3b8" stroke-width="6"/>
     <line x1="600" y1="90" x2="480" y2="375"/>
@@ -21,7 +21,7 @@
     <text x="480" y="390" font-size="46" fill="#0d1117" font-weight="800">SAM</text>
     <circle cx="720" cy="375" r="115" fill="#a78bfa"/>
     <text x="720" y="388" font-size="38" fill="#0d1117" font-weight="800">Memory</text>
-    <g fill="#161b22" stroke-width="3">
+    <g fill="rgb(16,22,32)" stroke-width="3">
       <circle cx="600" cy="90" r="72" stroke="#e2e8f0"/>
       <circle cx="897" cy="144" r="72" stroke="#a78bfa"/>
       <circle cx="1080" cy="287" r="72" stroke="#a78bfa"/>

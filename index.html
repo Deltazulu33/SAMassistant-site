@@ -6,9 +6,16 @@
 <title>SAM assistant</title>
 <meta name="description" content="SAM, your personal AI assistant at home. Coming soon.">
 <style>
-:root{--bg:#0d1117;--ink:#e2e8f0;--mute:#94a3b8;--acc:#38bdf8}
+:root{--bg:rgb(2,6,11);--ink:rgba(234,235,238,.98);--mute:#a8b3c2;--acc:#38bdf8}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg) url("background.jpg") center/cover no-repeat fixed}
+.glass{background:rgba(255,255,255,.04);border:.5px solid rgba(234,235,238,.22);border-radius:18px;padding:20px;
+  -webkit-backdrop-filter:blur(10px) saturate(1.25);backdrop-filter:blur(10px) saturate(1.25);
+  box-shadow:3px 3px .5px -3.5px rgba(255,255,255,.30) inset,-2px -2px .5px -2px rgba(255,255,255,.20) inset,0 14px 38px rgba(0,0,0,.34),0 2px 10px rgba(0,0,0,.24)}
+footer{margin-top:2rem;font-size:.75rem;color:#6b7686}
+footer a{color:#6b7686}
 main{max-width:1200px;margin:0 auto;padding:24px 16px 48px;text-align:center}
 h1{font-size:1.8rem;margin:.5rem 0 1.5rem}
 h1 b{color:var(--acc)}
@@ -21,9 +28,10 @@ a{color:var(--acc)}
 <body>
 <main>
 <h1>SAM <b>assistant</b></h1>
-<img src="sam-map.svg" alt="SAM and its memory: email, calendar, tasks, reminders, home automation, history, personal details, projects, recall. Off the shelf, no programming, small box, your memory lives at home.">
+<div class="glass"><img src="sam-map.svg" alt="SAM and its memory: email, calendar, tasks, reminders, home automation, history, personal details, projects, recall. Off the shelf, no programming, small box, your memory lives at home."></div>
 <a class="btn" href="https://t.me/Contact_SAM_bot" target="_blank" rel="noopener">Click here to chat with us on Telegram</a>
 <p>Or email <a href="mailto:dennis@ssaprop.com">dennis@ssaprop.com</a></p>
+<footer>Background image from the Frosted Glass themes by wessamlauf (<a href="LICENSE-background.txt">MIT licence</a>).</footer>
 </main>
 </body>
 </html>
