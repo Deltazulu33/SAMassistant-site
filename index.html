@@ -23,14 +23,48 @@ img{width:100%;height:auto;display:block}
 .btn{display:inline-block;background:var(--acc);color:var(--bg);font-weight:700;text-decoration:none;padding:.8rem 1.4rem;border-radius:10px;margin-top:1.5rem;font-size:1.05rem}
 p{color:var(--mute)}
 a{color:var(--acc)}
+.demos{margin-top:2rem}
+.demos h2{font-size:1.4rem;margin:0 0 .3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-top:1rem}
+.tile{display:block;text-decoration:none;color:var(--ink);background:rgba(2,6,11,.45);border:.5px solid rgba(234,235,238,.22);border-radius:14px;overflow:hidden;cursor:pointer}
+.tile img{aspect-ratio:9/12;object-fit:cover;object-position:top}
+.tile span{display:block;padding:.55rem .6rem;font-weight:700;font-size:.95rem}
+.tile small{display:block;padding:0 .6rem .6rem;color:var(--mute);font-size:.8rem;font-weight:400}
+.links{margin-top:1.2rem}.links a{margin:0 .6rem}
+#player{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:10;padding:16px}
+#player.on{display:flex}
+#player video{max-height:92vh;max-width:100%;border-radius:12px;background:#000}
+#player button{position:absolute;top:12px;right:16px;background:none;border:0;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1}
 </style>
 </head>
 <body>
 <main>
 <h1>SAM <b>assistant</b></h1>
 <div class="glass"><img src="sam-map.svg" alt="SAM and its memory: email, calendar, tasks, reminders, home automation, history, personal details, projects, recall. Off the shelf, no programming, small box, your memory lives at home."></div>
+<section class="glass demos" id="demos">
+<h2>See SAM in action</h2>
+<p>Short demos with sample data. Tap a topic to watch.</p>
+<div class="grid">
+  <a class="tile" href="videos/morning.mp4" data-v="videos/morning.mp4"><img src="videos/morning.jpg" alt="" loading="lazy"><span>Morning briefing</span><small>Your day, before your first coffee</small></a>
+  <a class="tile" href="videos/reminders.mp4" data-v="videos/reminders.mp4"><img src="videos/reminders.jpg" alt="" loading="lazy"><span>Reminders</span><small>Never forget the small things</small></a>
+  <a class="tile" href="videos/email.mp4" data-v="videos/email.mp4"><img src="videos/email.jpg" alt="" loading="lazy"><span>Email</span><small>Read, answered and filed</small></a>
+  <a class="tile" href="videos/gift.mp4" data-v="videos/gift.mp4"><img src="videos/gift.jpg" alt="" loading="lazy"><span>Birthday gift</span><small>It remembers what you gave before</small></a>
+  <a class="tile" href="videos/trip.mp4" data-v="videos/trip.mp4"><img src="videos/trip.jpg" alt="" loading="lazy"><span>Plan a trip</span><small>Bookings and documents in one place</small></a>
+  <a class="tile" href="videos/rudolf.mp4" data-v="videos/rudolf.mp4"><img src="videos/rudolf.jpg" alt="" loading="lazy"><span>Personal trainer</span><small>Clients, payments and the family diary</small></a>
+</div>
+</section>
+<p class="links"><a href="what-you-get/">What you get</a> &middot; <a href="manual-63i1bymc/">Owner manual</a></p>
+<div id="player" role="dialog" aria-label="Demo video"><button aria-label="Close">&times;</button><video controls playsinline></video></div>
 <a class="btn" href="https://t.me/Contact_SAM_bot" target="_blank" rel="noopener">Click here to chat with us on Telegram</a>
 <footer>Background image from the Frosted Glass themes by wessamlauf (<a href="LICENSE-background.txt">MIT licence</a>).</footer>
 </main>
+<script>
+(function(){var p=document.getElementById('player'),v=p.querySelector('video');
+function close(){v.pause();v.removeAttribute('src');v.load();p.classList.remove('on');document.getElementById('demos').scrollIntoView({behavior:'smooth'});}
+document.querySelectorAll('.tile').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();v.src=a.dataset.v;p.classList.add('on');v.play().catch(function(){});});});
+v.addEventListener('ended',close);p.querySelector('button').addEventListener('click',close);
+p.addEventListener('click',function(e){if(e.target===p)close();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&p.classList.contains('on'))close();});})();
+</script>
 </body>
 </html>
