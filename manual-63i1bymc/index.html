@@ -33,6 +33,8 @@ ol.steps{padding-left:1.3rem} ol.steps>li{margin:.5rem 0}
 code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:rgba(2,6,11,.6);border:1px solid var(--line);border-radius:4px;padding:.05rem .35rem;color:var(--ink)}
 footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{color:var(--dim)}
 @media (max-width:560px){.toc{columns:1}h1{font-size:1.6rem}main.wrap{padding:4px 16px 20px}}
+.sub{padding-left:1.5rem}
+@media (max-width:560px){.sub{padding-left:.9rem}}
 </style>
 </head>
 <body>
@@ -81,17 +83,18 @@ footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{colo
   <li>Connect the network cable from the unit to your router. A cable is more reliable than wifi; if you can, leave it plugged in for good.</li>
   <li>Connect the screen, keyboard and mouse.</li>
   <li>Plug in the power supply. The unit starts by itself; there is no power button to press.</li>
-  <li>When the desktop appears, double-click the <b>Setup</b> icon. The setup page opens.</li>
+  <li>When the desktop appears, leave it alone. A note called <b>Setup-is-installing.txt</b> sits at the top left: the unit is installing its programs. This takes about 6 to 10 minutes.</li>
+  <li>When installing is done, the note changes to <b>Setup-restarting.txt</b> and the unit restarts by itself a minute later. Wait for that restart. Only then double-click the <b>Setup</b> icon <img src="../setup-icon.svg" alt="Setup icon" width="40" height="40" style="vertical-align:middle">. The setup page opens.</li>
 </ol>
-<div class="note">You can also continue from your phone or laptop: on the setup page, open <b>Start here &gt; Carry on from a phone or laptop</b>. It shows the address to open and a setup password. Your phone or laptop must be on the same home network.</div>
+<div class="note">You can also continue from your phone or laptop: on the setup page, open <b>Start here &gt; Carry on from a phone or laptop</b>. It shows the address to open and a setup password (small letters and numbers, for example <code>k7mp-x4vh</code>). Your phone or laptop must be on the same home network. Password refused, or locked after too many tries? Press <b>New password</b> there, on the unit's own screen.</div>
 
 <h2 id="setup">4. The setup page, step by step</h2>
 <p>The setup page lists the steps under <b>Start here</b>. Do them in order; each one turns grey when it is done. You can close the page and come back at any time: double-click Setup again.</p>
 
-<h3>Step 1. Basics</h3>
+<h3>4.1 Basics</h3>
 <p>Choose your assistant's name, fill in your name, your email and your timezone, and the name of your notes folder. Under <b>Network</b> you can tick that the unit is on a cable and, if you know how, reserve a fixed address for it in your router. Wifi can be set up here too.</p>
 
-<h3>Step 2. Telegram bot</h3>
+<h3>4.2 Telegram bot</h3>
 <p>You make your own private bot in Telegram, in about two minutes:</p>
 <ol>
   <li>On your phone, open <b>BotFather</b> (scan the code on the page or press Open BotFather). Check it has the blue tick.</li>
@@ -100,47 +103,54 @@ footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{colo
   <li>BotFather answers with a long token. Copy it and paste it on the setup page, then press <b>Store token</b>.</li>
 </ol>
 
-<h3>Step 3. Home Assistant and router (optional)</h3>
+<h3>4.3 Home Assistant and router (optional)</h3>
 <p>If you use Home Assistant, SAM can work with it: paste its address and a long-lived access token. You can also allow SAM to look after your internet router. That gives it the keys to your network, so leave it off if unsure. Not needed? Press <b>Skip, not now</b>.</p>
 
-<h3>Step 4. Your questions</h3>
+<h3>4.4 Your questions</h3>
 <p>About fifteen short questions, mostly ticks and choices: how SAM should talk to you, which lists to keep, what it must always ask you about first. Safe choices are already filled in. You can change any answer later by telling SAM on Telegram.</p>
 
-<h3>Step 5. Build SAM's settings</h3>
-<p>One button that turns everything above into SAM's settings and rulebook. Press it again whenever you change something in steps 1 to 4.</p>
+<h3>4.5 Build SAM's settings</h3>
+<p>One button that turns everything above into SAM's settings and rulebook. Press it again whenever you change something in 4.1 to 4.4.</p>
 
-<h3>Step 6. Sign in to Claude</h3>
-<p>Do this step on the unit itself. The button opens a black window with Claude in it:</p>
+<h3>4.6 Sign in to Claude</h3>
+<p>Do this step on the unit itself, with its own screen, keyboard and mouse, not from your phone or laptop. Claude signs in through the unit's own browser, so it cannot be done remotely. On the unit, press the <b>Sign in to Claude</b> button on the setup page. It opens a black window with Claude in it:</p>
 <ol>
-  <li>Claude asks a few first-time questions (colour scheme and so on). Press Enter to accept each.</li>
+  <li>The first screen only asks for the window colour. Press Enter.</li>
+  <li>Claude then asks how to sign in, with three choices:
+    <ol>
+      <li><b>Claude account with subscription</b> (Pro or Max). Choose this one.</li>
+      <li><b>Anthropic Console account</b>: paying per use through the API, for experts.</li>
+      <li><b>3rd-party platform</b>: other cloud platforms, not covered here.</li>
+    </ol>
+  </li>
   <li>The browser opens claude.ai. Sign in with your Claude account and press <b>Authorize</b>.</li>
   <li>Back in the black window, when Claude shows its input line, close the window.</li>
 </ol>
 
-<h3>Step 7. Start SAM</h3>
+<h3>4.7 Start SAM</h3>
 <p>Switches SAM on. From now on it starts by itself whenever the unit gets power.</p>
 
-<h3>Step 8. Pair your phone</h3>
+<h3>4.8 Pair your phone</h3>
 <p>On your phone, open the chat with your new bot and send <b>hi</b>. The bot answers with a code; the same code appears on the setup page within a few seconds. Press <b>This is me</b>. Only paired phones can talk to SAM. Use <b>Add another phone</b> for a partner's phone.</p>
 
-<h3>Step 9. Gmail and Google Calendar</h3>
+<h3>4.9 Gmail and Google Calendar</h3>
 <p>SAM works with Google (Gmail) accounts. Best done now, while the screen and keyboard are attached:</p>
 <ol>
-  <li>On claude.ai, signed in with the same Claude account, open <b>Customize &gt; Connectors</b>.</li>
+  <li>Open the browser and go to <b>www.claude.ai</b>. Sign in with the same Claude account you used in 4.6, then open <b>Customize &gt; Connectors</b>.</li>
   <li>At <b>Google Calendar</b>, press <b>+</b>, choose your Google account and allow access. Do the same for <b>Gmail</b>.</li>
   <li>Back on the setup page, press <b>Check connection</b>. It takes up to a minute.</li>
 </ol>
 <p>Not now? Choose <b>Not now</b>; you can add it later by asking SAM.</p>
 
-<h3>Step 10. Your notes in Obsidian</h3>
+<h3>4.10 Your notes in Obsidian</h3>
 <p>Double-click the <b>Obsidian</b> icon on the desktop. It opens straight into SAM's notes folder. The step ticks itself once Obsidian has opened.</p>
 
-<h3>Step 11. Move to the SSD (last step)</h3>
-<p>Do this once, when everything above works. It copies the whole system from the memory card to the faster, longer-lasting SSD. It takes 5 to 15 minutes; do not switch off while it runs. When the page says the copy is finished:</p>
+<h3>4.11 Move to the SSD (last step)</h3>
+<p>Do this once, when everything above works. It copies the whole system from the memory card to the faster, longer-lasting SSD. It takes 5 to 15 minutes; do not switch off while it runs.</p>
 <ol>
-  <li>Raspberry menu &gt; <b>Shutdown</b>.</li>
-  <li>Take the small memory card out of the unit. Keep it as a spare.</li>
-  <li>Switch on again. Step 11 ticks itself once SAM runs from the SSD.</li>
+  <li>Press <b>Copy to the SSD</b> (no button? Reload the page with F5). Wait until step 11 on the page says <b>Copy finished.</b> While it shows <b>Busy</b>, leave the unit alone.</li>
+  <li>Only then: Raspberry menu &gt; <b>Shutdown</b>.</li>
+  <li>Switch on again. The unit now always starts from the SSD first, so the memory card can stay in; it is only a spare. Step 11 ticks itself once SAM runs from the SSD.</li>
 </ol>
 <p>Then send SAM a message from your phone. You can now disconnect the screen, keyboard and mouse; SAM runs without them.</p>
 
@@ -163,6 +173,7 @@ footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{colo
 <p>You can also ask: "check for updates".</p>
 
 <h2 id="trouble">8. When something is wrong</h2>
+<div class="sub">
 <h3>SAM does not answer</h3>
 <ul>
   <li>Check the unit has power and the network cable is in.</li>
@@ -171,11 +182,12 @@ footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{colo
 <h3>SAM only answers "Acknowledged"</h3>
 <p>Your message arrived, but Claude cannot think right now: either SAM has been logged out of your Claude account, or your subscription's usage limit has been reached for the moment. Usage limits reset by themselves after a few hours.</p>
 <h3>SAM says it has been logged out</h3>
-<p>SAM sends you a Telegram alert when it loses its Claude login. Open Setup on the unit and do <b>step 6, Sign in to Claude</b> again. SAM restarts and tells you it is back.</p>
+<p>SAM sends you a Telegram alert when it loses its Claude login. Open Setup on the unit and do <b>step 6, Sign in to Claude</b> (4.6 in this manual) again. SAM restarts and tells you it is back.</p>
 <h3>After a power failure</h3>
 <p>Nothing to do. SAM starts by itself when the power returns.</p>
 <h3>Still stuck?</h3>
-<p>Email <a href="mailto:dennis@ssaprop.com">dennis@ssaprop.com</a> or message us on Telegram at <a href="https://t.me/Contact_SAM_bot">@Contact_SAM_bot</a> with what you see. Nobody can log in to your unit from outside, so a photo of the screen helps.</p>
+<p>Message us on Telegram at <a href="https://t.me/Contact_SAM_bot">@Contact_SAM_bot</a> with what you see. Nobody can log in to your unit from outside, so a photo of the screen helps.</p>
+</div>
 
 <h2 id="privacy">9. Privacy and safety</h2>
 <ul>
