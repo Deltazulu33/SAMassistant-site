@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAM how-to videos</title>
+<meta name="description" content="Short how-to videos for SAM, your personal assistant at home.">
+<style>
+:root{--bg:rgb(2,6,11);--ink:rgba(234,235,238,.98);--mute:#a8b3c2;--acc:#38bdf8}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg) url("../background.jpg") center/cover no-repeat fixed}
+.glass{background:rgba(56,189,248,.05);border:.5px solid rgba(186,230,253,.25);border-radius:20px;padding:20px;
+  -webkit-backdrop-filter:blur(10px) saturate(1.25);backdrop-filter:blur(10px) saturate(1.25);
+  box-shadow:3px 3px .5px -3.5px rgba(255,255,255,.30) inset,-2px -2px .5px -2px rgba(255,255,255,.20) inset,0 14px 38px rgba(0,0,0,.34),0 2px 10px rgba(0,0,0,.24)}
+footer{margin-top:2rem;font-size:.75rem;color:#6b7686}
+footer a{color:#6b7686}
+main{max-width:1200px;margin:0 auto;padding:24px 16px 48px;text-align:center}
+h1{font-size:1.8rem;margin:.5rem 0 1.5rem}
+h1 b{color:var(--acc)}
+img{width:100%;height:auto;display:block}
+.btn{display:inline-block;background:var(--acc);color:var(--bg);font-weight:700;text-decoration:none;padding:.8rem 1.4rem;border-radius:10px;margin-top:1.5rem;font-size:1.05rem}
+p{color:var(--mute)}
+a{color:var(--acc)}
+.demos{margin-top:2rem}
+.demos h2{font-size:1.4rem;margin:0 0 .3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-top:1rem}
+.tile{display:block;text-decoration:none;color:var(--ink);background:rgba(2,6,11,.45);border:.5px solid rgba(234,235,238,.22);border-radius:14px;overflow:hidden;cursor:pointer}
+.tile img{aspect-ratio:9/12;object-fit:cover;object-position:top}
+.tile span{display:block;padding:.55rem .6rem;font-weight:700;font-size:.95rem}
+.tile small{display:block;padding:0 .6rem .6rem;color:var(--mute);font-size:.8rem;font-weight:400}
+.links{margin-top:1.2rem}.links a{margin:0 .6rem}
+.toplink{display:inline-block;margin:-.6rem 0 1.2rem;padding:.55rem 1.2rem;border:1px solid var(--acc);border-radius:999px;color:var(--acc);text-decoration:none;font-weight:700;background:rgba(56,189,248,.08)}
+#player{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:10;padding:16px}
+#player.on{display:flex}
+#player video{max-height:92vh;max-width:100%;border-radius:12px;background:#000}
+#player button{position:absolute;top:12px;right:16px;background:none;border:0;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1}
+</style>
+</head>
+<body>
+<main>
+<h1>SAM <b>how-to videos</b></h1>
+<p class="links" style="margin-top:-.8rem"><a href="../">Home</a> &middot; <a href="../what-you-get/">What you get</a> &middot; <a href="../manual-63i1bymc/">Owner manual</a></p>
+<section class="glass demos" id="demos">
+<h2>How to</h2>
+<p>Short videos with sample data. Tap one to watch.</p>
+<div class="grid">
+  <a class="tile" href="../videos/howto-contacts.mp4" data-v="../videos/howto-contacts.mp4"><img src="../videos/howto-contacts.jpg" alt="" loading="lazy"><span>Add contacts</span><small>Type them or send a photo of a business card</small></a>
+</div>
+</section>
+<div id="player" role="dialog" aria-label="How-to video"><button aria-label="Close">&times;</button><video controls playsinline></video></div>
+<a class="btn" href="https://t.me/Contact_SAM_bot" target="_blank" rel="noopener">Questions? Chat with us on Telegram</a>
+<footer>&copy; 2026 Dennis Bouwers. SAM assistant is not made by or affiliated with Anthropic or Telegram. Claude is a trademark of Anthropic.</footer>
+</main>
+<script>
+(function(){var p=document.getElementById('player'),v=p.querySelector('video');
+function close(){v.pause();v.removeAttribute('src');v.load();p.classList.remove('on');document.getElementById('demos').scrollIntoView({behavior:'smooth'});}
+document.querySelectorAll('.tile').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();v.src=a.dataset.v;p.classList.add('on');v.play().catch(function(){});});});
+v.addEventListener('ended',close);p.querySelector('button').addEventListener('click',close);
+p.addEventListener('click',function(e){if(e.target===p)close();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&p.classList.contains('on'))close();});})();
+</script>
+</body>
+</html>
