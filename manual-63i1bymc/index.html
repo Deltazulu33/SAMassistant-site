@@ -62,37 +62,65 @@ footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{colo
 
 <h2 id="box">1. In the box</h2>
 <ul>
-  <li>The SAM unit: a Raspberry Pi 5 in its case with a cooling fan and an SSD inside. A sticker on the case shows the unit's name (for example <code>shrike-6746</code>).</li>
+  <li>The SAM unit: a small computer in its case with a cooling fan and an SSD inside. A sticker on the case shows the unit's name (for example <code>shrike-6746</code>).</li>
+  <li><b>The label under the unit</b>: the unit's own wifi name (for example <code>SAM-shrike-6746</code>), the <b>unit code</b> (for example <code>k7mp-4xq9</code>) and two QR codes. The same label is in this manual. Keep it: the unit code is also your setup password, and it never changes.</li>
   <li>The official power supply.</li>
   <li>A small memory card (microSD), packed separately. SAM starts from it until the last setup step moves everything to the SSD.</li>
-  <li>A micro-HDMI to HDMI cable, to connect a screen for setup.</li>
+  <li>A screen cable (micro-HDMI to HDMI). Not needed for setup; only if you ever want to see the unit's own screen.</li>
 </ul>
 
 <h2 id="before">2. Before you start</h2>
 <ul>
   <li><b>A Claude subscription</b> (Pro or Max) in your own name, from claude.ai. SAM thinks with Claude through your account; this is the running cost.</li>
   <li><b>Telegram</b> on your phone.</li>
-  <li><b>A screen, keyboard and mouse</b> for the unit, for the setup evening only. The screen cable is in the box.</li>
-  <li><b>A network cable</b> (recommended) from the unit to your router. Wifi also works.</li>
+  <li><b>Your home wifi name and password</b>, or a network cable to your router. A cable is the most reliable; if you can, leave it plugged in for good.</li>
+  <li>Your phone. No screen, keyboard or mouse is needed.</li>
   <li>About an hour.</li>
 </ul>
 
 <h2 id="connect">3. Connecting the unit</h2>
+<p>There are two ways to connect SAM. Choose one: <b>3A with a network cable</b> to your router (the most reliable, and you can leave it plugged in for good) or <b>3B over wifi</b>, without a cable.</p>
+<div class="note"><b>The green light on the unit</b> shows what SAM is doing:
+<ul>
+  <li><b>Flickering now and then:</b> busy, for example installing. Just wait.</li>
+  <li><b>3 slow flashes, a pause, again:</b> SAM's own wifi is on and SAM is waiting for you. Take your phone and do the next step.</li>
+  <li><b>Fast flashing, nonstop:</b> the install did not work. Check the cable or your wifi, then pull the power plug, wait 10 seconds and plug it in again. SAM tries again by itself.</li>
+</ul></div>
+
+<h3 id="connect-cable">3A. With a network cable to your router</h3>
 <ol class="steps">
   <li>Push the memory card into the card slot on the underside of the unit, at the end opposite the USB ports. It only fits one way: do not force it.</li>
-  <li>Connect the network cable from the unit to your router. A cable is more reliable than wifi; if you can, leave it plugged in for good.</li>
-  <li>Connect the screen, keyboard and mouse.</li>
+  <li>Connect the network cable from the unit to your router.</li>
   <li>Plug in the power supply. The unit starts by itself; there is no power button to press.</li>
-  <li>When the desktop appears, leave it alone. A note called <b>Setup-is-installing.txt</b> sits at the top left: the unit is installing its programs. This takes about 6 to 10 minutes.</li>
-  <li>When installing is done, the note changes to <b>Setup-restarting.txt</b> and the unit restarts by itself a minute later. Wait for that restart. Only then double-click the <b>Setup</b> icon <img src="../setup-icon.svg" alt="Setup icon" width="40" height="40" style="vertical-align:middle">. The setup page opens.</li>
+  <li>Wait about 10 to 15 minutes, until the green light flashes slowly (3 flashes, a pause). The unit downloads and installs its programs and restarts once by itself.</li>
+  <li>On your phone, open <b>Settings</b>, then <b>Wi-Fi</b>. Tap the network called <b>SAM-</b> followed by the unit's name (on the label) and type the unit code as the password. Or scan <b>QR code 1</b> on the label ("Join the wifi").</li>
+  <li>Scan <b>QR code 2</b> ("Open setup"), or open the browser and go to <b>http://10.42.0.1</b>. The setup page opens. You are let in straight away: being on the unit's own wifi is proof enough.</li>
+  <li>At the top, the page shows SAM's address on your home network, for example <b>http://192.168.1.23:8765</b>. <b>Take a screenshot of it.</b> After setup, that is where you open the setup page from your phone or laptop at home.</li>
 </ol>
-<div class="note">You can also continue from your phone or laptop: on the setup page, open <b>Start here &gt; Carry on from a phone or laptop</b>. It shows the address to open and a setup password (small letters and numbers, for example <code>k7mp-x4vh</code>). Your phone or laptop must be on the same home network. Password refused, or locked after too many tries? Press <b>New password</b> there, on the unit's own screen.</div>
+<p>While the network cable is in, the unit shares its internet with your phone over this wifi, so every step works from the phone, including the Telegram bot and the Claude sign-in. The unit's own wifi stays on until setup is done. Rather use a laptop? Join the same wifi with the laptop.</p>
+
+<h3 id="connect-wifi">3B. Over wifi, without a cable</h3>
+<ol class="steps">
+  <li>Push the memory card into the card slot on the underside of the unit, at the end opposite the USB ports. It only fits one way: do not force it.</li>
+  <li>Plug in the power supply. The unit starts by itself; there is no power button to press.</li>
+  <li>Wait about 2 to 3 minutes, until the green light flashes slowly (3 flashes, a pause).</li>
+  <li>On your phone, open <b>Settings</b>, then <b>Wi-Fi</b>. Tap the network called <b>SAM-</b> followed by the unit's name (on the label) and type the unit code as the password. Or scan <b>QR code 1</b> on the label.</li>
+  <li>A page opens by itself. Read the steps on it and take a screenshot. Choose your home wifi, type its password (tap <b>Show</b> to check what you typed) and press <b>Connect</b>.</li>
+  <li>After 15 seconds the unit's wifi switches off and your phone goes back to your home wifi by itself.</li>
+  <li>Wait about 10 to 15 minutes, until the green light flashes slowly again. The unit installs its programs over your home wifi, restarts once by itself, and then its own wifi is back.</li>
+  <li>On your phone, open <b>Settings</b>, then <b>Wi-Fi</b>, and tap <b>SAM-</b><i>unit name</i> again (same password).</li>
+  <li>The page opens by itself (or scan <b>QR code 2</b>, or go to <b>http://10.42.0.1</b>). It shows SAM's address on your home wifi, for example <b>http://192.168.1.23:8765</b>. <b>Take a screenshot of it.</b></li>
+  <li>Press <b>Back to</b> <i>your wifi</i>. The unit's wifi switches off and your phone goes back to your home wifi.</li>
+  <li>On your phone or laptop at home, open the address from your screenshot and type the unit code as the setup password. The setup page opens.</li>
+</ol>
+<div class="note">Lost the address? Your router's app lists the devices on your network: look for the unit's name and its number address (for example in the Deco or Mesh app under Clients). Or pull the power plug, wait 10 seconds, plug it in again and do steps 8 to 11 again.</div>
 
 <h2 id="setup">4. The setup page, step by step</h2>
-<p>The setup page lists the steps under <b>Start here</b>. Do them in order; each one turns grey when it is done. You can close the page and come back at any time: double-click Setup again.</p>
+<p>The setup page lists the steps under <b>Start here</b>. Do them in order; each one turns grey when it is done. You can close the page and come back at any time: join the unit's wifi again, or open the address from section 3 at home.</p>
 
 <h3>4.1 Basics</h3>
-<p>Choose your assistant's name, fill in your name, your email and your timezone, and the name of your notes folder. Under <b>Network</b> you can tick that the unit is on a cable and, if you know how, reserve a fixed address for it in your router. Wifi can be set up here too.</p>
+<p>Choose your assistant's name, fill in your name, your email and your timezone, and the name of your notes folder. Under <b>Network</b> you tick that the unit is on a cable and, if you know how, reserve a fixed address for it in your router.</p>
+<p><b>Wifi instead of the cable?</b> Choose your home wifi under <b>Network</b> and type its password. The unit leaves its own wifi and joins yours, so your phone loses the setup page. After about a minute the unit's own wifi comes back once and shows the address the unit got on your home wifi: do 3B steps 8 to 11.</p>
 
 <h3>4.2 Telegram bot</h3>
 <p>You make your own private bot in Telegram, in about two minutes:</p>
@@ -113,46 +141,64 @@ footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{colo
 <p>One button that turns everything above into SAM's settings and rulebook. Press it again whenever you change something in 4.1 to 4.4.</p>
 
 <h3>4.6 Sign in to Claude</h3>
-<p>Do this step on the unit itself, with its own screen, keyboard and mouse, not from your phone or laptop. Claude signs in through the unit's own browser, so it cannot be done remotely. On the unit, press the <b>Sign in to Claude</b> button on the setup page. It opens a black window with Claude in it:</p>
+<p>From your phone or laptop, like every other step. Claude may email you a code during sign-in, so have your email at hand.</p>
 <ol>
-  <li>The first screen only asks for the window colour. Press Enter.</li>
-  <li>Claude then asks how to sign in, with three choices:
-    <ol>
-      <li><b>Claude account with subscription</b> (Pro or Max). Choose this one.</li>
-      <li><b>Anthropic Console account</b>: paying per use through the API, for experts.</li>
-      <li><b>3rd-party platform</b>: other cloud platforms, not covered here.</li>
-    </ol>
-  </li>
-  <li>The browser opens claude.ai. Sign in with your Claude account and press <b>Authorize</b>.</li>
-  <li>Back in the black window, when Claude shows its input line, close the window.</li>
+  <li>Press <b>Sign in to Claude</b>. A button <b>Open the Claude sign-in</b> appears below it.</li>
+  <li>Tap that button. Claude's sign-in page opens. Sign in with your Claude account (Pro or Max) and press <b>Authorize</b>.</li>
+  <li>Claude shows an <b>Authentication code</b>. Tap <b>Copy code</b>.</li>
+  <li>Go back to the setup page, paste the code in the box and press <b>Send code</b>. Do this within a few minutes; the code expires.</li>
+  <li>After a few seconds the page says <b>Signed in</b> and step 6 turns grey.</li>
 </ol>
+<p>Code refused? Press <b>Sign in to Claude</b> again for a fresh one and paste the whole code. Keep the code to yourself; it only works for this one sign-in.</p>
 
 <h3>4.7 Start SAM</h3>
 <p>Switches SAM on. From now on it starts by itself whenever the unit gets power.</p>
 
 <h3>4.8 Pair your phone</h3>
 <p>On your phone, open the chat with your new bot and send <b>hi</b>. The bot answers with a code; the same code appears on the setup page within a few seconds. Press <b>This is me</b>. Only paired phones can talk to SAM. Use <b>Add another phone</b> for a partner's phone.</p>
+<p><b>Save SAM support.</b> Under the pairing, the setup page shows a code for <a href="https://t.me/Contact_SAM_bot">@Contact_SAM_bot</a>: scan it and press <b>Start</b>. That is our support chat: you can ask for help there any time, and we can let you know when an update is coming. It sees only your Telegram name, never your notes or your unit. Optional; you can block the chat any time.</p>
 
 <h3>4.9 Gmail and Google Calendar</h3>
-<p>SAM works with Google (Gmail) accounts. Best done now, while the screen and keyboard are attached:</p>
+<p>SAM works with Google (Gmail) accounts. Best done now, on your phone or laptop:</p>
 <ol>
-  <li>Open the browser and go to <b>www.claude.ai</b>. Sign in with the same Claude account you used in 4.6, then open <b>Customize &gt; Connectors</b>.</li>
+  <li>In the browser, go to <b>www.claude.ai</b>. Sign in with the same Claude account you used in 4.6, then open <b>Customize &gt; Connectors</b>.</li>
   <li>At <b>Google Calendar</b>, press <b>+</b>, choose your Google account and allow access. Do the same for <b>Gmail</b>.</li>
   <li>Back on the setup page, press <b>Check connection</b>. It takes up to a minute.</li>
 </ol>
 <p>Not now? Choose <b>Not now</b>; you can add it later by asking SAM.</p>
+<h4>Calendar reminders</h4>
+<p>SAM sends you a Telegram message before each appointment (how many minutes before, you chose in 4.4). For that, the unit needs the <b>secret address</b> of your calendar. Without it, no calendar reminders; everything else works.</p>
+<p><b>Easiest on a laptop or computer:</b></p>
+<ol>
+  <li>Go to <b>calendar.google.com</b>, signed in to your Google account. Gear icon (top right) &gt; <b>Settings</b>.</li>
+  <li>In the left column, under <b>Settings for my calendars</b>, click your calendar (your name or email), then <b>Integrate calendar</b>.</li>
+  <li>At <b>Secret address in iCal format</b>, press the copy button. It is the address with <b>private</b> in it, not the <b>Public address</b>.</li>
+  <li>On the setup page, step 9, <b>Calendar reminders</b>: paste it and press <b>Add calendar</b>. If it worked, the page shows your next appointment.</li>
+</ol>
+<p><b>Only a phone?</b> Possible, with a few tricks. The Google Calendar app does not show the secret address, and Google keeps sending you to the app, so use the browser:</p>
+<ol>
+  <li>Open a <b>private tab</b> (Chrome: menu &#8942; &gt; New Incognito tab; Safari: Tabs &gt; Private) and sign in to Google there. A private tab does not jump to the app.</li>
+  <li>Type <b>calendar.google.com/calendar/r/settings</b> in the address bar.</li>
+  <li>Switch on the desktop version: Chrome &#8942; &gt; tick <b>Desktop site</b>; Safari <b>aA</b> &gt; <b>Request Desktop Website</b>. If the app still opens, go back to the private tab and ask for the desktop site again.</li>
+  <li>Zoom in with two fingers. Tap your calendar under <b>Settings for my calendars</b>, then <b>Integrate calendar</b>.</li>
+  <li>Press and hold the <b>Secret address in iCal format</b>, choose <b>Select all</b>, then <b>Copy</b>.</li>
+  <li>Open the setup page on the phone, step 9, paste it and press <b>Add calendar</b>.</li>
+</ol>
+<p>Android keeps opening the app? Phone Settings &gt; Apps &gt; Calendar &gt; <b>Open by default</b>: switch off <b>Open supported links</b> for a moment, and back on afterwards.</p>
+<p>More calendars (family, work)? Do the same for each one; every calendar has its own secret address.</p>
+<p><b>Keep it secret.</b> Anyone with this address can read that calendar. Paste it only on the setup page, never in a chat or email. If it ever gets out: press <b>Reset</b> next to it in Google, then <b>Remove all calendar links</b> on the setup page and add the new one.</p>
 
 <h3>4.10 Your notes in Obsidian</h3>
-<p>Double-click the <b>Obsidian</b> icon on the desktop. It opens straight into SAM's notes folder. The step ticks itself once Obsidian has opened.</p>
+<p>The notes live in a folder on the unit. Without a screen on the unit, press <b>Skip, not now</b>: SAM works the same, you can ask it about your notes on Telegram, and Obsidian Sync (section 6) shows them on your phone and computer. With a screen on the unit, double-click the <b>Obsidian</b> icon on the desktop instead; the step then ticks itself.</p>
 
 <h3>4.11 Move to the SSD (last step)</h3>
 <p>Do this once, when everything above works. It copies the whole system from the memory card to the faster, longer-lasting SSD. It takes 5 to 15 minutes; do not switch off while it runs.</p>
 <ol>
   <li>Press <b>Copy to the SSD</b> (no button? Reload the page with F5). Wait until step 11 on the page says <b>Copy finished.</b> While it shows <b>Busy</b>, leave the unit alone.</li>
-  <li>Only then: Raspberry menu &gt; <b>Shutdown</b>.</li>
-  <li>Switch on again. The unit now always starts from the SSD first, so the memory card can stay in; it is only a spare. Step 11 ticks itself once SAM runs from the SSD.</li>
+  <li>Only then press <b>Restart unit</b>.</li>
+  <li>Wait about two minutes and reload the page. The unit now always starts from the SSD first, so the memory card can stay in; it is only a spare. Step 11 ticks itself once SAM runs from the SSD.</li>
 </ol>
-<p>Then send SAM a message from your phone. You can now disconnect the screen, keyboard and mouse; SAM runs without them.</p>
+<p>Then send SAM a message from your phone.</p>
 
 <h2 id="daily">5. Using SAM every day</h2>
 <p>Write to SAM in Telegram as you would to a person. Some examples:</p>
@@ -166,7 +212,7 @@ footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{colo
 <p>SAM confirms what it did. If it is about to do something on your "always ask first" list, it asks and waits for your answer.</p>
 
 <h2 id="notes">6. Your notes</h2>
-<p>Everything SAM writes down lives in the notes folder on the unit: to-do lists, a daily log, your notes. Open it any time with Obsidian on the unit. To see the same notes on your phone and computer you need Obsidian Sync, a paid extra from Obsidian in your own name (Obsidian &gt; Settings &gt; General &gt; Account, then Core plugins &gt; Sync). Without it, SAM works just the same.</p>
+<p>Everything SAM writes down lives in the notes folder on the unit: to-do lists, a daily log, your notes. Open it any time with Obsidian on the unit. Your notes stay on the unit only: they are not on your phone or in the cloud, and that is on purpose, for privacy. To read a note while you are out, just ask SAM in Telegram. To see the same notes on your phone and computer you need Obsidian Sync, a paid extra from Obsidian in your own name (Obsidian &gt; Settings &gt; General &gt; Account, then Core plugins &gt; Sync). Without it, SAM works just the same.</p>
 
 <h2 id="updates">7. Updates</h2>
 <p>SAM checks for a new version once a day. When there is one, it tells you on Telegram what changes. Nothing is installed unless you reply exactly <b>Yes, install now</b>. Reply <b>no</b> to skip that version. SAM restarts once, takes about a minute, and reports back. If an update ever goes wrong, the previous version is put back automatically.</p>
@@ -182,11 +228,21 @@ footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{colo
 <h3>SAM only answers "Acknowledged"</h3>
 <p>Your message arrived, but Claude cannot think right now: either SAM has been logged out of your Claude account, or your subscription's usage limit has been reached for the moment. Usage limits reset by themselves after a few hours.</p>
 <h3>SAM says it has been logged out</h3>
-<p>SAM sends you a Telegram alert when it loses its Claude login. Open Setup on the unit and do <b>step 6, Sign in to Claude</b> (4.6 in this manual) again. SAM restarts and tells you it is back.</p>
+<p>SAM sends you a Telegram alert when it loses its Claude login, and a warning a few days before the login runs out. The alert contains a link to the setup page. Open it on your phone at home (setup password: the unit code), go to <b>step 6</b> and do <b>Sign in again</b> as in 4.6. SAM restarts and tells you it is back.</p>
+<h3>I cannot find the setup page</h3>
+<ul>
+  <li>At home: ask SAM on Telegram for "the setup page link".</li>
+  <li>If the unit has lost your home network (new router, new wifi password), its own wifi <b>SAM-<i>unit name</i></b> comes back by itself after about 5 minutes. On your phone, open Settings, then Wi-Fi, tap it, type the unit code, and fix the network in step 1.</li>
+  <li>Last resort: your router's app lists the devices on your network; look for the unit's name and open <b>http://<i>its address</i>:8765</b>.</li>
+</ul>
+<h3>Forgot the unit code</h3>
+<p>It is on the label under the unit and in this manual. It never changes. Typed it wrong too often and locked out? Join the unit's own wifi (with the same code) and press <b>Sign out other devices</b> under Start here; that also lifts the lock.</p>
+<h3>The green light flashes fast</h3>
+<p>The install did not work, usually because there was no internet. Check the cable or your home wifi, pull the power plug, wait 10 seconds and plug it in again. SAM carries on where it stopped.</p>
 <h3>After a power failure</h3>
 <p>Nothing to do. SAM starts by itself when the power returns.</p>
 <h3>Still stuck?</h3>
-<p>Message us on Telegram at <a href="https://t.me/Contact_SAM_bot">@Contact_SAM_bot</a> with what you see. Nobody can log in to your unit from outside, so a photo of the screen helps.</p>
+<p>Message us on Telegram at <a href="https://t.me/Contact_SAM_bot">@Contact_SAM_bot</a> with what you see. Nobody can log in to your unit from outside, so a photo of the setup page helps.</p>
 </div>
 
 <h2 id="privacy">9. Privacy and safety</h2>

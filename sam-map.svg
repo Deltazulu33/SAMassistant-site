@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1840 1195" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1840 1225" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
   
   <g stroke="#475569" stroke-width="3" fill="none">
     <line x1="480" y1="375" x2="720" y2="375" stroke="#94a3b8" stroke-width="6"/>
@@ -71,7 +71,7 @@
     <text x="1392" y="1008" font-size="23" fill="#e2e8f0" text-anchor="middle">WhatsApp</text>
     <text x="1622" y="1008" font-size="23" fill="#e2e8f0" text-anchor="middle">Telegram</text>
   </g>
-  <g transform="translate(0,210)">
+  <g transform="translate(0,240)">
   <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
     <line x1="60" y1="800" x2="1780" y2="800" stroke="#1f2733" stroke-width="2"/>
     <text x="60" y="840" font-size="26" font-weight="700" fill="#e2e8f0">The only prerequisites</text>
