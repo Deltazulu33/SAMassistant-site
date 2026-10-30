@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Obsidian Sync - SAM support</title>
+<meta name="description" content="How to get Obsidian Sync and see your SAM notes on your phone, tablet or laptop.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--ink:rgba(234,235,238,.98);--mute:#b4bfcd;--dim:#8a95a5;--acc:#38bdf8;--line:rgba(234,235,238,.18)}
+*{box-sizing:border-box}
+html{background:rgb(2,6,11)}
+body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:rgb(2,6,11) url("../../background.jpg") center/cover no-repeat fixed}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem;padding-bottom:1rem}
+.brand{white-space:nowrap;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+.brand b{color:var(--acc)}
+nav a{color:var(--mute);text-decoration:none;margin-left:1rem}
+nav a.active,nav a:hover{color:var(--acc)}
+main.wrap{background:rgba(56,189,248,.05);border:.5px solid rgba(186,230,253,.25);border-radius:20px;padding:8px 28px 28px;margin-bottom:32px;
+  -webkit-backdrop-filter:blur(10px) saturate(1.25);backdrop-filter:blur(10px) saturate(1.25);
+  box-shadow:3px 3px .5px -3.5px rgba(255,255,255,.30) inset,-2px -2px .5px -2px rgba(255,255,255,.20) inset,0 14px 38px rgba(0,0,0,.34)}
+h1{font-size:2rem;margin:1.5rem 0 .5rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .5rem;scroll-margin-top:1rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .3rem}
+p,li{color:var(--mute)} strong,b{color:var(--ink)} a{color:var(--acc)}
+.lead{font-size:1.1rem}
+.card{background:rgba(2,6,11,.45);border:.5px solid var(--line);border-radius:14px;padding:1rem 1.2rem;margin:1rem 0}
+.note{border-left:3px solid var(--acc);padding:.4rem .9rem;margin:1rem 0;background:rgba(2,6,11,.45);border-radius:0 10px 10px 0}
+ol.steps{padding-left:1.3rem} ol.steps>li{margin:.5rem 0}
+.toc{columns:2;column-gap:2rem;padding-left:1.2rem}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:rgba(2,6,11,.6);border:1px solid var(--line);border-radius:4px;padding:.05rem .35rem;color:var(--ink)}
+footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{color:var(--dim)}
+@media (max-width:560px){.toc{columns:1}h1{font-size:1.6rem}main.wrap{padding:4px 16px 20px}}
+.sub{padding-left:1.5rem}
+@media (max-width:560px){.sub{padding-left:.9rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="../../">SAM <b>assistant</b></a>
+  <nav><a href="../../">Home</a><a href="../../manual-63i1bymc/">Manual</a><a href="../../how-to/">How to</a><a href="https://t.me/Contact_SAM_bot">Contact</a></nav>
+</div></header>
+
+<main class="wrap">
+<h1>Obsidian Sync</h1>
+<p class="lead">Your SAM notes on your phone, tablet or laptop. About 20 minutes.</p>
+
+<h2>What it does</h2>
+<p>Your SAM keeps its notes (your "vault") on the unit at home. Obsidian Sync copies that vault to your phone, tablet or laptop and keeps them in step both ways. What SAM writes shows up on your phone; what you write on your phone, SAM can read.</p>
+<p>Obsidian Sync is a paid service from Obsidian, not from SAM. It is end-to-end encrypted: with your own encryption password, Obsidian cannot read your notes.</p>
+
+<h2>What you need</h2>
+<ul>
+  <li>Your SAM with a screen, keyboard and mouse plugged in (for part 2 only).</li>
+  <li>Your phone (or tablet / laptop) with internet.</li>
+  <li>An email address for your Obsidian account.</li>
+  <li>A bank card (paid in US dollars).</li>
+</ul>
+
+<h2>Which plan</h2>
+<p>Prices on 28-10-2026, per month, in US dollars. Check <b>obsidian.md/sync</b> for today's prices.</p>
+<ul>
+  <li><b>Sync Standard</b>: $4 billed yearly, $5 billed monthly. 1 GB, largest file 5 MB, 1 month of version history.</li>
+  <li><b>Sync Plus</b>: $8 billed yearly, $10 billed monthly. 10 GB (up to 100 GB extra), largest file 200 MB, 12 months of version history.</li>
+</ul>
+<p>Both work on any number of devices. Standard is enough for most owners. Choose Plus if you keep many PDFs, scans or photos in your notes: on Standard, any file over 5 MB does not sync.</p>
+
+<h2>Part 1: Create your Obsidian account and buy Sync</h2>
+<ol class="steps">
+  <li>On your phone or computer, go to <b>obsidian.md</b> and select <b>Log in</b>, then <b>Sign up</b>.</li>
+  <li>Enter your name, email and a password. Confirm the email Obsidian sends you.</li>
+  <li>Log in at obsidian.md, open your <b>Account</b>, and buy <b>Sync</b> (Standard or Plus, yearly or monthly).</li>
+  <li>Write down your Obsidian email and password somewhere safe. Never send passwords to SAM on Telegram.</li>
+</ol>
+
+<h2>Part 2: Put your SAM's notes on Sync</h2>
+<p>On the SAM itself, with a screen, keyboard and mouse plugged in.</p>
+<ol class="steps">
+  <li>Open <b>Obsidian</b> on the SAM desktop (the Obsidian icon). It opens your SAM notes.</li>
+  <li>Open <b>Settings</b> (gear icon, bottom left) &gt; <b>Core plugins</b> &gt; switch on <b>Sync</b>.</li>
+  <li><b>Settings</b> &gt; <b>General</b> &gt; under <b>Account</b>, select <b>Log in</b>. Enter your Obsidian email and password, select <b>Login</b>.</li>
+  <li><b>Settings</b> &gt; <b>Sync</b> &gt; next to <b>Remote vault</b> select <b>Choose</b> &gt; <b>Create new vault</b>.
+    <ul>
+      <li><b>Vault name</b>: for example "SAM notes".</li>
+      <li><b>Region</b>: the closest one offered (Europe if there is no Africa option).</li>
+      <li><b>Encryption password</b>: choose one and write it down. It is separate from your account password. If you lose it, nobody can recover your synced notes: not Obsidian and not us.</li>
+      <li>Select <b>Create</b>.</li>
+    </ul></li>
+  <li>Select <b>Connect</b> next to the new vault, enter the encryption password, select <b>Unlock vault</b>.</li>
+  <li>A pop-up offers <b>Start Syncing</b>. Close it first and set <b>Device name</b> to "SAM". Leave the rest as it is.</li>
+  <li>Back in <b>Settings</b> &gt; <b>Sync</b>, select <b>Start Syncing</b>. The first upload can take a few minutes.</li>
+  <li>Close Obsidian and do part 4.</li>
+</ol>
+
+<h2>Part 3: Your phone (or tablet / laptop)</h2>
+<ol class="steps">
+  <li>Install <b>Obsidian</b> from the App Store or Play Store (or obsidian.md for a laptop).</li>
+  <li>Open it and select <b>Setup Obsidian Sync</b>.</li>
+  <li>Log in with your Obsidian email and password.</li>
+  <li>Select <b>Connect</b> next to "SAM notes" and enter the encryption password.</li>
+  <li>Give the local vault the same name ("SAM notes") and select <b>Create</b>.</li>
+  <li>When the <b>Setup Connection</b> window appears, close it (swipe down), then start syncing. Your notes download.</li>
+</ol>
+<div class="note">Do not connect the phone to a vault that already has notes in it: Obsidian would mix the two.</div>
+
+<h2>Part 4: Keep Sync running, also after a power cut</h2>
+<p>Once only. Close Obsidian on the SAM, then copy this message and send it to SAM on Telegram:</p>
+<div class="card">Please keep Obsidian Sync running in the background on this SAM, also after a power cut or restart. Run Obsidian on an invisible screen that starts by itself at every boot. If something is missing, tell me in plain words what to do. Tell me when it is running. From now on, when I ask to use Obsidian on the screen, switch the background one off first and back on when I say I am done.</div>
+<p>SAM tells you when it is done. Want to use Obsidian on the SAM's screen later? Tell SAM "I want to use Obsidian on the screen" first, and "done with Obsidian" afterwards.</p>
+
+<h2>Check it works</h2>
+<ol class="steps">
+  <li>On your phone, open any note. Then ask SAM on Telegram: "add a note in my Inbox called Sync test". Within a minute or two it appears on your phone.</li>
+  <li>Edit "Sync test" on your phone, then ask SAM: "what does my Sync test note say?"</li>
+</ol>
+
+<h2>Good to know</h2>
+<ul>
+  <li>Without part 4, Sync stops after a restart until Obsidian is opened again on the SAM.</li>
+  <li><b>Sync is not a backup.</b> Keep your SAM backup as well.</li>
+  <li>Files over 5 MB do not sync on Standard.</li>
+  <li>Changing the region later means uploading everything again.</li>
+</ul>
+
+<p>Stuck? Message SAM support on Telegram: <a href="https://t.me/Contact_SAM_bot">@Contact_SAM_bot</a>. <a href="../">All guides</a></p>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Dennis Bouwers. SAM assistant is not made by or affiliated with Anthropic or Telegram. Claude is a trademark of Anthropic. &middot; <a href="../../">Home</a></div></footer>
+</body>
+</html>
