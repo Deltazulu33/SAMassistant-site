@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign in to Claude again - SAM support</title>
+<meta name="description" content="How to sign your SAM in to Claude again from anywhere with /login on Telegram.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--ink:rgba(234,235,238,.98);--mute:#b4bfcd;--dim:#8a95a5;--acc:#38bdf8;--line:rgba(234,235,238,.18)}
+*{box-sizing:border-box}
+html{background:rgb(2,6,11)}
+body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:rgb(2,6,11) url("../../background.jpg") center/cover no-repeat fixed}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem;padding-bottom:1rem}
+.brand{white-space:nowrap;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+.brand b{color:var(--acc)}
+nav a{color:var(--mute);text-decoration:none;margin-left:1rem}
+nav a.active,nav a:hover{color:var(--acc)}
+main.wrap{background:rgba(56,189,248,.05);border:.5px solid rgba(186,230,253,.25);border-radius:20px;padding:8px 28px 28px;margin-bottom:32px;
+  -webkit-backdrop-filter:blur(10px) saturate(1.25);backdrop-filter:blur(10px) saturate(1.25);
+  box-shadow:3px 3px .5px -3.5px rgba(255,255,255,.30) inset,-2px -2px .5px -2px rgba(255,255,255,.20) inset,0 14px 38px rgba(0,0,0,.34)}
+h1{font-size:2rem;margin:1.5rem 0 .5rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .5rem;scroll-margin-top:1rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .3rem}
+p,li{color:var(--mute)} strong,b{color:var(--ink)} a{color:var(--acc)}
+.lead{font-size:1.1rem}
+.card{background:rgba(2,6,11,.45);border:.5px solid var(--line);border-radius:14px;padding:1rem 1.2rem;margin:1rem 0}
+.note{border-left:3px solid var(--acc);padding:.4rem .9rem;margin:1rem 0;background:rgba(2,6,11,.45);border-radius:0 10px 10px 0}
+ol.steps{padding-left:1.3rem} ol.steps>li{margin:.5rem 0}
+.toc{columns:2;column-gap:2rem;padding-left:1.2rem}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:rgba(2,6,11,.6);border:1px solid var(--line);border-radius:4px;padding:.05rem .35rem;color:var(--ink)}
+footer .wrap{padding:0 16px 2rem;font-size:.8rem;color:var(--dim)} footer a{color:var(--dim)}
+@media (max-width:560px){.toc{columns:1}h1{font-size:1.6rem}main.wrap{padding:4px 16px 20px}}
+.sub{padding-left:1.5rem}
+@media (max-width:560px){.sub{padding-left:.9rem}}
+nav a{white-space:nowrap}
+@media (max-width:560px){header .wrap{flex-wrap:wrap;row-gap:.3rem}nav{display:flex;flex-wrap:wrap;row-gap:.2rem}nav a{margin:0 1rem 0 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="../../">SAM <b>assistant</b></a>
+  <nav><a href="../../">Home</a><a href="../../manual-63i1bymc/">Manual</a><a href="../../how-to/">How to</a><a href="../../about/">About</a><a href="https://t.me/Contact_SAM_bot">Contact</a></nav>
+</div></header>
+
+<main class="wrap">
+<h1>Sign in to Claude again</h1>
+<p class="lead">From anywhere, on your phone, with /login. About 2 minutes. Needs SAM version 0.5 or later.</p>
+
+<h2>When you need it</h2>
+<ul>
+  <li>SAM warns you 10, 5 and 2 days before its Claude login runs out.</li>
+  <li>SAM tells you it is logged out of Claude and can't answer.</li>
+  <li>SAM only answers "Acknowledged" and nothing else for a long time (it can also be your usage limit: that resets by itself within a few hours).</li>
+</ul>
+
+<h2>What you need</h2>
+<ul>
+  <li>Your phone with Telegram, the chat with your SAM.</li>
+  <li>The email and password of the Claude account your SAM uses (the one you chose at setup, step 6).</li>
+</ul>
+<p>You do not need to be at home: this works on mobile data, anywhere.</p>
+
+<h2>Steps</h2>
+<ol class="steps">
+  <li>In the chat with your SAM, send <b>/login</b>.</li>
+  <li>SAM replies "Signing in: the link follows in a few seconds". It then hands over to its sign-in helper, which sends <b>Getting a sign-in link from Claude...</b> and then the link.</li>
+  <li>Open the link. Sign in with the Claude account your SAM uses and press <b>Authorize</b>.</li>
+  <li>Claude shows a code. Copy all of it and send it to SAM as a normal message.</li>
+  <li>The code disappears from the chat once it is used. You get <b>Signed in. The Claude login is valid until</b> <i>date</i>.</li>
+  <li>SAM starts again and answers within about a minute.</li>
+</ol>
+
+<h2>When does my login run out?</h2>
+<p>Ask SAM: "When does my Claude login expire?" It answers with the date and time. Claude sets this date with every sign-in (about 4 weeks), so a new sign-in can end a little earlier than the old one. That is normal.</p>
+
+<h2>If it does not work</h2>
+<ul>
+  <li><b>No link arrives within a minute:</b> send <b>/login</b> again.</li>
+  <li><b>"Sign-in did not work: Claude did not accept the code":</b> the code must be sent whole and within a few minutes. Send <b>/login</b> for a new link and try again.</li>
+  <li><b>You took longer than 15 minutes:</b> the link expires. If SAM was still working, it carries on with the old login. Send <b>/login</b> again when you are ready.</li>
+  <li><b>Wrong Claude account:</b> sign in with the account SAM was set up with. Another account works too, but then SAM uses that subscription.</li>
+  <li><b>At home</b> you can also use the setup page: ask SAM for "the setup page link", open it (password: the clearance code on the label), step 6, <b>Sign in again</b>.</li>
+</ul>
+<p>Only the owner's own Telegram chat can sign SAM in. Others who use your SAM are told it is busy and back shortly.</p>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Dennis Bouwers. SAM assistant is not made by or affiliated with Anthropic or Telegram. Claude is a trademark of Anthropic. &middot; <a href="../../">Home</a></div></footer>
+</body>
+</html>
