@@ -1,77 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1840 1225" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 70 1840 1376" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
   
   <g stroke="#475569" stroke-width="3" fill="none">
-    <line x1="480" y1="375" x2="720" y2="375" stroke="#94a3b8" stroke-width="6"/>
-    <line x1="600" y1="90" x2="480" y2="375"/>
-    <line x1="600" y1="90" x2="720" y2="375"/>
-    <line x1="873" y1="135" x2="720" y2="375"/>
-    <line x1="1059" y1="257" x2="720" y2="375"/>
-    <line x1="1100" y1="416" x2="720" y2="375"/>
-    <line x1="982" y1="562" x2="480" y2="375"/>
-    <line x1="982" y1="562" x2="720" y2="375"/>
-    <line x1="742" y1="648" x2="480" y2="375"/>
-    <line x1="742" y1="648" x2="720" y2="375"/>
-    <line x1="458" y1="648" x2="480" y2="375"/>
-    <line x1="218" y1="562" x2="480" y2="375"/>
-    <line x1="100" y1="416" x2="480" y2="375"/>
-    <line x1="141" y1="257" x2="480" y2="375"/>
-    <line x1="327" y1="135" x2="480" y2="375"/>
+    <line x1="480" y1="600" x2="720" y2="600" stroke="#94a3b8" stroke-width="6"/>
+    <line x1="600" y1="270" x2="480" y2="600"/>
+    <line x1="600" y1="270" x2="720" y2="600"/>
+    <line x1="774" y1="291" x2="720" y2="600"/>
+    <line x1="935" y1="355" x2="720" y2="600"/>
+    <line x1="1063" y1="475" x2="720" y2="600"/>
+    <line x1="1096" y1="643" x2="720" y2="600"/>
+    <line x1="1007" y1="791" x2="480" y2="600"/>
+    <line x1="1007" y1="791" x2="720" y2="600"/>
+    <line x1="859" y1="882" x2="480" y2="600"/>
+    <line x1="859" y1="882" x2="720" y2="600"/>
+    <line x1="689" y1="925" x2="480" y2="600"/>
+    <line x1="512" y1="925" x2="480" y2="600"/>
+    <line x1="343" y1="883" x2="480" y2="600"/>
+    <line x1="194" y1="792" x2="480" y2="600"/>
+    <line x1="105" y1="644" x2="480" y2="600"/>
+    <line x1="137" y1="476" x2="480" y2="600"/>
+    <line x1="263" y1="356" x2="480" y2="600"/>
+    <line x1="425" y1="291" x2="480" y2="600"/>
   </g>
   <g text-anchor="middle" font-weight="600">
-    <circle cx="480" cy="375" r="115" fill="#38bdf8"/>
-    <text x="480" y="390" font-size="46" fill="#0d1117" font-weight="800">SAM</text>
-    <circle cx="720" cy="375" r="115" fill="#a78bfa"/>
-    <text x="720" y="388" font-size="38" fill="#0d1117" font-weight="800">Memory</text>
+    <circle cx="480" cy="600" r="115" fill="#38bdf8"/>
+    <text x="480" y="615" font-size="46" fill="#0d1117" font-weight="800">SAM</text>
+    <circle cx="720" cy="600" r="115" fill="#a78bfa"/>
+    <text x="720" y="613" font-size="38" fill="#0d1117" font-weight="800">Memory</text>
     <g fill="rgb(16,22,32)" stroke-width="3">
-      <circle cx="600" cy="90" r="72" stroke="#e2e8f0"/>
-      <circle cx="873" cy="135" r="72" stroke="#a78bfa"/>
-      <circle cx="1059" cy="257" r="72" stroke="#a78bfa"/>
-      <circle cx="1100" cy="416" r="72" stroke="#a78bfa"/>
-      <circle cx="982" cy="562" r="72" stroke="#e2e8f0"/>
-      <circle cx="742" cy="648" r="72" stroke="#e2e8f0"/>
-      <circle cx="458" cy="648" r="72" stroke="#38bdf8"/>
-      <circle cx="218" cy="562" r="72" stroke="#38bdf8"/>
-      <circle cx="100" cy="416" r="72" stroke="#38bdf8"/>
-      <circle cx="141" cy="257" r="72" stroke="#38bdf8"/>
-      <circle cx="327" cy="135" r="72" stroke="#38bdf8"/>
+      <circle cx="600" cy="270" r="72" stroke="#e2e8f0"/>
+      <circle cx="774" cy="291" r="72" stroke="#a78bfa"/>
+      <circle cx="935" cy="355" r="72" stroke="#a78bfa"/>
+      <circle cx="1063" cy="475" r="72" stroke="#a78bfa"/>
+      <circle cx="1096" cy="643" r="72" stroke="#a78bfa"/>
+      <circle cx="1007" cy="791" r="72" stroke="#e2e8f0"/>
+      <circle cx="859" cy="882" r="72" stroke="#e2e8f0"/>
+      <circle cx="689" cy="925" r="72" stroke="#38bdf8"/>
+      <circle cx="512" cy="925" r="72" stroke="#38bdf8"/>
+      <circle cx="343" cy="883" r="72" stroke="#38bdf8"/>
+      <circle cx="194" cy="792" r="72" stroke="#38bdf8"/>
+      <circle cx="105" cy="644" r="72" stroke="#38bdf8"/>
+      <circle cx="137" cy="476" r="72" stroke="#38bdf8"/>
+      <circle cx="263" cy="356" r="72" stroke="#38bdf8"/>
+      <circle cx="425" cy="291" r="72" stroke="#38bdf8"/>
     </g>
     <g font-size="22" fill="#e2e8f0">
-      <text x="600" y="98">Reminders</text>
-      <text x="873" y="143">History</text>
-      <text x="1059" y="252">Personal</text><text x="1059" y="278">details</text>
-      <text x="1100" y="424">Projects</text>
-      <text x="982" y="557">Remember</text><text x="982" y="583">when</text>
-      <text x="742" y="656">Recall</text>
-      <text x="458" y="628">Create</text><text x="458" y="650" font-size="13" font-weight="400" fill="#94a3b8">notes /</text><text x="458" y="666" font-size="13" font-weight="400" fill="#94a3b8">spreadsheets /</text><text x="458" y="682" font-size="13" font-weight="400" fill="#94a3b8">presentations</text>
-      <text x="218" y="570">Calendar</text>
-      <text x="100" y="405">Tasks</text><text x="100" y="427" font-size="14" font-weight="400" fill="#94a3b8">once-off or</text><text x="100" y="444" font-size="14" font-weight="400" fill="#94a3b8">repeating</text>
-      <text x="141" y="246">Email</text><text x="141" y="268" font-size="14" font-weight="400" fill="#94a3b8">send / receive</text><text x="141" y="285" font-size="14" font-weight="400" fill="#94a3b8">/ sort</text>
-      <text x="327" y="130" font-size="19">Home</text><text x="327" y="156" font-size="19">automation</text>
+      <text x="600" y="277" font-size="19">Reminders</text>
+      <text x="774" y="298">History</text>
+      <text x="935" y="349" font-size="19">Ideas &amp;</text><text x="935" y="375" font-size="19">decisions</text>
+      <text x="1063" y="469" font-size="19">Personal</text><text x="1063" y="495" font-size="19">details</text>
+      <text x="1096" y="650" font-size="19">Projects</text>
+      <text x="1007" y="785" font-size="19">Remember</text><text x="1007" y="811" font-size="19">when</text>
+      <text x="859" y="889">Recall</text>
+      <text x="689" y="908">Create</text><text x="689" y="926" font-size="13" font-weight="400" fill="#94a3b8">notes /</text><text x="689" y="942" font-size="13" font-weight="400" fill="#94a3b8">spreadsheets /</text><text x="689" y="958" font-size="13" font-weight="400" fill="#94a3b8">presentations</text>
+      <text x="512" y="916">Admin</text><text x="512" y="934" font-size="13" font-weight="400" fill="#94a3b8">invoices /</text><text x="512" y="950" font-size="13" font-weight="400" fill="#94a3b8">payments</text>
+      <text x="343" y="890" font-size="19">Calendar</text>
+      <text x="194" y="783">Trips</text><text x="194" y="801" font-size="13" font-weight="400" fill="#94a3b8">bookings /</text><text x="194" y="817" font-size="13" font-weight="400" fill="#94a3b8">documents</text>
+      <text x="105" y="635">Tasks</text><text x="105" y="653" font-size="13" font-weight="400" fill="#94a3b8">once-off or</text><text x="105" y="669" font-size="13" font-weight="400" fill="#94a3b8">repeating</text>
+      <text x="137" y="467">Email</text><text x="137" y="485" font-size="13" font-weight="400" fill="#94a3b8">send / receive</text><text x="137" y="501" font-size="13" font-weight="400" fill="#94a3b8">/ sort</text>
+      <text x="263" y="347" font-size="19">Research</text><text x="263" y="365" font-size="13" font-weight="400" fill="#94a3b8">online, saved</text><text x="263" y="381" font-size="13" font-weight="400" fill="#94a3b8">to memory</text>
+      <text x="425" y="285" font-size="19">Home</text><text x="425" y="311" font-size="19">automation</text>
     </g>
   </g>
-  <line x1="1215" y1="130" x2="1215" y2="700" stroke="#1f2733" stroke-width="2"/>
+  <line x1="1215" y1="130" x2="1215" y2="861" stroke="#1f2733" stroke-width="2"/>
   <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
     <circle cx="1265" cy="206" r="9" fill="#38bdf8"/>
     <text x="1292" y="215" font-size="30" font-weight="700" fill="#e2e8f0">Off the shelf</text>
     <text x="1292" y="251" font-size="23" fill="#94a3b8">Ready to plug in.</text>
-    <circle cx="1265" cy="326" r="9" fill="#38bdf8"/>
-    <text x="1292" y="335" font-size="30" font-weight="700" fill="#e2e8f0">No programming</text>
-    <text x="1292" y="371" font-size="23" fill="#94a3b8">Just answer a few set-up questions.</text>
-    <circle cx="1265" cy="446" r="9" fill="#38bdf8"/>
-    <text x="1292" y="455" font-size="30" font-weight="700" fill="#e2e8f0">Small box</text>
-    <text x="1292" y="491" font-size="23" fill="#94a3b8">Place it anywhere. Works on wifi.</text>
-    <circle cx="1265" cy="566" r="9" fill="#38bdf8"/>
-    <text x="1292" y="575" font-size="30" font-weight="700" fill="#e2e8f0">At home</text>
-    <text x="1292" y="611" font-size="23" fill="#94a3b8">Your memory lives on your</text>
-    <text x="1292" y="641" font-size="23" fill="#94a3b8">own unit, in your home.</text>
-    <circle cx="1265" cy="705" r="9" fill="#38bdf8"/>
-    <text x="1292" y="714" font-size="30" font-weight="700" fill="#e2e8f0">Contact</text>
-    <text x="1292" y="750" font-size="23" fill="#94a3b8">Scan with your phone camera.</text>
-    <rect x="1292" y="775" width="200" height="200" rx="14" fill="#ffffff"/><svg x="1304" y="787" width="176" height="176" viewBox="0 0 33 33" shape-rendering="crispEdges"><path class="qrline" stroke="#0f172a" d="M0 0.5h7m2 0h2m1 0h2m2 0h1m1 0h2m1 0h1m1 0h2m1 0h7m-33 1h1m5 0h1m1 0h2m1 0h3m1 0h3m5 0h2m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h3m1 0h5m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m4 0h1m2 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m3 0h1m2 0h3m1 0h2m2 0h1m2 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-23 1h1m1 0h1m1 0h6m2 0h2m-23 1h3m1 0h2m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m2 0h1m8 0h2m-32 1h1m6 0h3m2 0h2m1 0h1m1 0h4m2 0h1m2 0h2m1 0h2m-31 1h3m2 0h2m6 0h1m2 0h1m1 0h1m2 0h9m1 0h2m-31 1h3m5 0h1m1 0h1m1 0h1m1 0h2m2 0h3m1 0h2m1 0h1m1 0h1m2 0h1m-32 1h1m2 0h1m1 0h1m4 0h4m5 0h4m3 0h1m1 0h1m1 0h1m-30 1h2m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m2 0h2m3 0h1m1 0h1m1 0h3m-31 1h1m2 0h1m1 0h1m5 0h2m1 0h2m2 0h2m5 0h1m2 0h1m-29 1h5m1 0h1m1 0h3m1 0h2m2 0h1m3 0h2m1 0h4m1 0h2m-31 1h3m3 0h4m1 0h1m1 0h2m1 0h1m1 0h1m1 0h3m2 0h2m1 0h2m-30 1h1m3 0h2m2 0h1m4 0h1m3 0h1m2 0h1m1 0h3m1 0h1m1 0h2m1 0h1m-30 1h1m3 0h2m1 0h1m1 0h2m1 0h1m3 0h1m1 0h2m2 0h2m1 0h2m1 0h2m-32 1h2m1 0h3m2 0h1m2 0h1m1 0h3m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h2m2 0h2m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h2m-31 1h3m1 0h2m1 0h4m2 0h3m1 0h1m2 0h3m2 0h3m1 0h1m2 0h1m-30 1h1m1 0h5m1 0h2m3 0h1m1 0h3m1 0h2m1 0h2m1 0h2m1 0h2m-32 1h4m3 0h2m2 0h2m2 0h3m1 0h1m3 0h1m1 0h3m2 0h1m-32 1h1m1 0h1m2 0h2m8 0h1m3 0h1m2 0h8m1 0h1m-24 1h3m1 0h1m1 0h1m2 0h3m1 0h4m3 0h2m1 0h1m-32 1h7m3 0h1m2 0h2m1 0h6m1 0h2m1 0h1m1 0h1m2 0h1m-32 1h1m5 0h1m1 0h1m2 0h2m1 0h1m1 0h4m4 0h1m3 0h4m-32 1h1m1 0h3m1 0h1m2 0h1m1 0h3m3 0h2m3 0h7m1 0h2m-32 1h1m1 0h3m1 0h1m1 0h4m4 0h2m1 0h1m2 0h2m3 0h1m1 0h1m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h5m3 0h1m1 0h1m1 0h1m3 0h1m1 0h2m2 0h1m-31 1h1m5 0h1m1 0h2m2 0h2m2 0h2m2 0h1m1 0h2m2 0h3m3 0h1m-33 1h7m2 0h1m1 0h1m3 0h2m1 0h4m1 0h1m2 0h1m1 0h2"/></svg><rect x="1522" y="775" width="200" height="200" rx="14" fill="#ffffff"/><svg x="1534" y="787" width="176" height="176" viewBox="0 0 29 29" shape-rendering="crispEdges"><path class="qrline" stroke="#0f172a" d="M0 0.5h7m1 0h1m3 0h1m4 0h1m1 0h1m2 0h7m-29 1h1m5 0h1m1 0h1m1 0h1m3 0h7m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h3m2 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h1m3 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h2m2 0h2m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h1m2 0h2m3 0h3m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h1m2 0h2m2 0h3m2 0h1m-20 1h2m1 0h1m1 0h2m3 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h5m-28 1h1m2 0h2m1 0h1m1 0h1m1 0h4m1 0h2m2 0h2m3 0h1m2 0h1m-29 1h3m1 0h1m1 0h3m1 0h2m1 0h2m5 0h1m2 0h1m1 0h4m-29 1h1m1 0h1m2 0h1m1 0h1m2 0h1m4 0h1m1 0h2m2 0h3m3 0h1m-26 1h1m1 0h3m2 0h1m5 0h4m1 0h1m1 0h2m-24 1h4m1 0h1m1 0h1m4 0h1m2 0h3m3 0h3m3 0h2m-28 1h3m2 0h2m2 0h1m2 0h1m4 0h1m1 0h1m1 0h2m2 0h3m-29 1h1m2 0h1m1 0h1m1 0h9m1 0h1m1 0h2m2 0h1m3 0h1m-27 1h1m1 0h2m1 0h4m1 0h2m1 0h1m1 0h1m1 0h1m1 0h6m1 0h2m-27 1h1m2 0h1m3 0h3m1 0h1m1 0h2m3 0h2m3 0h1m1 0h2m-29 1h1m1 0h2m2 0h1m1 0h1m1 0h1m3 0h4m3 0h1m1 0h1m1 0h1m1 0h2m-28 1h2m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m-28 1h1m2 0h1m1 0h2m4 0h2m2 0h2m2 0h7m1 0h1m-20 1h2m2 0h1m3 0h1m3 0h1m3 0h1m3 0h1m-29 1h7m1 0h1m3 0h1m4 0h1m1 0h2m1 0h1m1 0h1m1 0h3m-29 1h1m5 0h1m2 0h3m2 0h1m1 0h1m3 0h1m3 0h1m2 0h2m-29 1h1m1 0h3m1 0h1m1 0h2m2 0h2m1 0h1m4 0h6m1 0h1m-28 1h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h2m1 0h1m2 0h2m2 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m2 0h3m3 0h2m1 0h1m1 0h1m-29 1h1m5 0h1m1 0h4m1 0h1m1 0h1m1 0h2m3 0h2m3 0h1m-28 1h7m2 0h3m2 0h1m1 0h2m1 0h4m1 0h5"/></svg>
-    <text x="1392" y="1008" font-size="23" fill="#e2e8f0" text-anchor="middle">WhatsApp</text>
-    <text x="1622" y="1008" font-size="23" fill="#e2e8f0" text-anchor="middle">Telegram</text>
+    <circle cx="1265" cy="311" r="9" fill="#38bdf8"/>
+    <text x="1292" y="320" font-size="30" font-weight="700" fill="#e2e8f0">No programming</text>
+    <text x="1292" y="356" font-size="23" fill="#94a3b8">Just answer a few set-up questions.</text>
+    <circle cx="1265" cy="416" r="9" fill="#38bdf8"/>
+    <text x="1292" y="425" font-size="30" font-weight="700" fill="#e2e8f0">Small box</text>
+    <text x="1292" y="461" font-size="23" fill="#94a3b8">Place it anywhere. Works on wifi.</text>
+    <circle cx="1265" cy="521" r="9" fill="#38bdf8"/>
+    <text x="1292" y="530" font-size="30" font-weight="700" fill="#e2e8f0">At home</text>
+    <text x="1292" y="566" font-size="23" fill="#94a3b8">Your memory lives on your</text>
+    <text x="1292" y="596" font-size="23" fill="#94a3b8">own unit, in your home.</text>
+    <circle cx="1265" cy="656" r="9" fill="#38bdf8"/>
+    <text x="1292" y="665" font-size="30" font-weight="700" fill="#e2e8f0">Updates over Wi-Fi</text>
+    <text x="1292" y="701" font-size="23" fill="#94a3b8">New features arrive by themselves.</text>
+    <circle cx="1265" cy="761" r="9" fill="#38bdf8"/>
+    <text x="1292" y="770" font-size="30" font-weight="700" fill="#e2e8f0">Backup</text>
+    <text x="1292" y="806" font-size="23" fill="#94a3b8">Encrypted, on your own USB stick.</text>
+    <circle cx="1265" cy="866" r="9" fill="#38bdf8"/>
+    <text x="1292" y="875" font-size="30" font-weight="700" fill="#e2e8f0">Contact</text>
+    <text x="1292" y="911" font-size="23" fill="#94a3b8">Scan with your phone camera.</text>
+    <rect x="1292" y="936" width="200" height="200" rx="14" fill="#ffffff"/><svg x="1304" y="948" width="176" height="176" viewBox="0 0 33 33" shape-rendering="crispEdges"><path class="qrline" stroke="#0f172a" d="M0 0.5h7m2 0h2m1 0h2m2 0h1m1 0h2m1 0h1m1 0h2m1 0h7m-33 1h1m5 0h1m1 0h2m1 0h3m1 0h3m5 0h2m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h3m1 0h5m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m4 0h1m2 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m3 0h1m2 0h3m1 0h2m2 0h1m2 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-23 1h1m1 0h1m1 0h6m2 0h2m-23 1h3m1 0h2m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m2 0h1m8 0h2m-32 1h1m6 0h3m2 0h2m1 0h1m1 0h4m2 0h1m2 0h2m1 0h2m-31 1h3m2 0h2m6 0h1m2 0h1m1 0h1m2 0h9m1 0h2m-31 1h3m5 0h1m1 0h1m1 0h1m1 0h2m2 0h3m1 0h2m1 0h1m1 0h1m2 0h1m-32 1h1m2 0h1m1 0h1m4 0h4m5 0h4m3 0h1m1 0h1m1 0h1m-30 1h2m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m2 0h2m3 0h1m1 0h1m1 0h3m-31 1h1m2 0h1m1 0h1m5 0h2m1 0h2m2 0h2m5 0h1m2 0h1m-29 1h5m1 0h1m1 0h3m1 0h2m2 0h1m3 0h2m1 0h4m1 0h2m-31 1h3m3 0h4m1 0h1m1 0h2m1 0h1m1 0h1m1 0h3m2 0h2m1 0h2m-30 1h1m3 0h2m2 0h1m4 0h1m3 0h1m2 0h1m1 0h3m1 0h1m1 0h2m1 0h1m-30 1h1m3 0h2m1 0h1m1 0h2m1 0h1m3 0h1m1 0h2m2 0h2m1 0h2m1 0h2m-32 1h2m1 0h3m2 0h1m2 0h1m1 0h3m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h2m2 0h2m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h2m-31 1h3m1 0h2m1 0h4m2 0h3m1 0h1m2 0h3m2 0h3m1 0h1m2 0h1m-30 1h1m1 0h5m1 0h2m3 0h1m1 0h3m1 0h2m1 0h2m1 0h2m1 0h2m-32 1h4m3 0h2m2 0h2m2 0h3m1 0h1m3 0h1m1 0h3m2 0h1m-32 1h1m1 0h1m2 0h2m8 0h1m3 0h1m2 0h8m1 0h1m-24 1h3m1 0h1m1 0h1m2 0h3m1 0h4m3 0h2m1 0h1m-32 1h7m3 0h1m2 0h2m1 0h6m1 0h2m1 0h1m1 0h1m2 0h1m-32 1h1m5 0h1m1 0h1m2 0h2m1 0h1m1 0h4m4 0h1m3 0h4m-32 1h1m1 0h3m1 0h1m2 0h1m1 0h3m3 0h2m3 0h7m1 0h2m-32 1h1m1 0h3m1 0h1m1 0h4m4 0h2m1 0h1m2 0h2m3 0h1m1 0h1m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h5m3 0h1m1 0h1m1 0h1m3 0h1m1 0h2m2 0h1m-31 1h1m5 0h1m1 0h2m2 0h2m2 0h2m2 0h1m1 0h2m2 0h3m3 0h1m-33 1h7m2 0h1m1 0h1m3 0h2m1 0h4m1 0h1m2 0h1m1 0h2"/></svg><rect x="1522" y="936" width="200" height="200" rx="14" fill="#ffffff"/><svg x="1534" y="948" width="176" height="176" viewBox="0 0 29 29" shape-rendering="crispEdges"><path class="qrline" stroke="#0f172a" d="M0 0.5h7m1 0h1m3 0h1m4 0h1m1 0h1m2 0h7m-29 1h1m5 0h1m1 0h1m1 0h1m3 0h7m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h3m2 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h1m3 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h2m2 0h2m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h1m2 0h2m3 0h3m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h1m2 0h2m2 0h3m2 0h1m-20 1h2m1 0h1m1 0h2m3 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h5m-28 1h1m2 0h2m1 0h1m1 0h1m1 0h4m1 0h2m2 0h2m3 0h1m2 0h1m-29 1h3m1 0h1m1 0h3m1 0h2m1 0h2m5 0h1m2 0h1m1 0h4m-29 1h1m1 0h1m2 0h1m1 0h1m2 0h1m4 0h1m1 0h2m2 0h3m3 0h1m-26 1h1m1 0h3m2 0h1m5 0h4m1 0h1m1 0h2m-24 1h4m1 0h1m1 0h1m4 0h1m2 0h3m3 0h3m3 0h2m-28 1h3m2 0h2m2 0h1m2 0h1m4 0h1m1 0h1m1 0h2m2 0h3m-29 1h1m2 0h1m1 0h1m1 0h9m1 0h1m1 0h2m2 0h1m3 0h1m-27 1h1m1 0h2m1 0h4m1 0h2m1 0h1m1 0h1m1 0h1m1 0h6m1 0h2m-27 1h1m2 0h1m3 0h3m1 0h1m1 0h2m3 0h2m3 0h1m1 0h2m-29 1h1m1 0h2m2 0h1m1 0h1m1 0h1m3 0h4m3 0h1m1 0h1m1 0h1m1 0h2m-28 1h2m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m-28 1h1m2 0h1m1 0h2m4 0h2m2 0h2m2 0h7m1 0h1m-20 1h2m2 0h1m3 0h1m3 0h1m3 0h1m3 0h1m-29 1h7m1 0h1m3 0h1m4 0h1m1 0h2m1 0h1m1 0h1m1 0h3m-29 1h1m5 0h1m2 0h3m2 0h1m1 0h1m3 0h1m3 0h1m2 0h2m-29 1h1m1 0h3m1 0h1m1 0h2m2 0h2m1 0h1m4 0h6m1 0h1m-28 1h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h2m1 0h1m2 0h2m2 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m2 0h3m3 0h2m1 0h1m1 0h1m-29 1h1m5 0h1m1 0h4m1 0h1m1 0h1m1 0h2m3 0h2m3 0h1m-28 1h7m2 0h3m2 0h1m1 0h2m1 0h4m1 0h5"/></svg>
+    <text x="1392" y="1169" font-size="23" fill="#e2e8f0" text-anchor="middle">WhatsApp</text>
+    <text x="1622" y="1169" font-size="23" fill="#e2e8f0" text-anchor="middle">Telegram</text>
   </g>
-  <g transform="translate(0,240)">
+  <g transform="translate(0,461)">
   <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
     <line x1="60" y1="800" x2="1780" y2="800" stroke="#1f2733" stroke-width="2"/>
     <text x="60" y="840" font-size="26" font-weight="700" fill="#e2e8f0">The only prerequisites</text>
@@ -79,7 +97,7 @@
       <circle cx="68" cy="882" r="6" fill="#38bdf8"/><text x="84" y="889">Telegram app on your phone</text>
       <circle cx="68" cy="920" r="6" fill="#38bdf8"/><text x="84" y="927">Home internet (wifi or cable)</text>
       <circle cx="560" cy="882" r="6" fill="#38bdf8"/><text x="576" y="889">Paid Claude subscription</text>
-      <circle cx="560" cy="920" r="6" fill="#38bdf8"/><text x="576" y="927">Monitor, keyboard and mouse, for setup only</text>
+      <circle cx="560" cy="920" r="6" fill="#38bdf8"/><text x="576" y="927">Your phone for setup, no screen needed</text>
       <circle cx="1100" cy="882" r="6" fill="#a78bfa"/><text x="1116" y="889">Optional: Obsidian Sync subscription,</text>
       <text x="1116" y="917">to see your memory and notes</text><text x="1116" y="945">on your other devices</text>
     </g>
