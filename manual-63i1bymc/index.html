@@ -231,7 +231,16 @@ nav a{white-space:nowrap}
 <h3>SAM only answers "Acknowledged"</h3>
 <p>Your message arrived, but Claude cannot think right now: either SAM has been logged out of your Claude account, or your subscription's usage limit has been reached for the moment. Usage limits reset by themselves after a few hours.</p>
 <h3>SAM says it has been logged out</h3>
-<p>SAM sends you a Telegram alert when it loses its Claude login, and a warning a few days before the login runs out. The alert contains a link to the setup page. Open it on your phone at home (setup password: the clearance code on the label), go to <b>step 6</b> and do <b>Sign in again</b> as in 4.6. SAM restarts and tells you it is back.</p>
+<p>SAM warns you 10, 5 and 2 days before its Claude login runs out, and alerts you if it is gone. Sign in again from anywhere, on your phone:</p>
+<ol>
+  <li>Send <b>/login</b> to SAM on Telegram.</li>
+  <li>A sign-in link arrives. Open it, sign in with the Claude account SAM uses and press <b>Authorize</b>.</li>
+  <li>Copy the code it shows and send it to SAM as a message. The code disappears from the chat once it is used.</li>
+  <li>SAM says <b>Signed in</b>, with the new end date, and answers again within a minute.</li>
+</ol>
+<p>Ask SAM "when does my Claude login expire?" to see the date. Claude sets it with every sign-in, so a new sign-in can end a little earlier than the old one. At home you can also use the setup page, <b>step 6</b>, <b>Sign in again</b> (as in 4.6).</p>
+<h3>SAM asks you a question with numbered choices</h3>
+<p>When Claude starts, it sometimes asks a question first (for example about a new mailbox SAM added). SAM answers the known ones by itself. A new one comes to you on Telegram: "SAM is stuck on a question when it starts", with the choices numbered. Reply with the number of your choice; SAM starts again within a minute. Not sure? Ask us at <a href="https://t.me/Contact_SAM_bot">@Contact_SAM_bot</a> first.</p>
 <h3>I cannot find the setup page</h3>
 <ul>
   <li>At home: ask SAM on Telegram for "the setup page link".</li>
