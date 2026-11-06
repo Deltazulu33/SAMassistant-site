@@ -110,12 +110,13 @@
     <line x1="60" y1="800" x2="1780" y2="800" stroke="#1f2733" stroke-width="2"/>
     <text x="60" y="840" font-size="26" font-weight="700" fill="#e2e8f0">The only prerequisites</text>
     <g font-size="21" fill="#94a3b8">
-      <circle cx="68" cy="882" r="6" fill="#38bdf8"/><text x="84" y="889">Telegram app on your phone</text>
+      <circle cx="68" cy="882" r="6" fill="#38bdf8"/><text x="84" y="889">Telegram app on your phone*</text>
       <circle cx="68" cy="920" r="6" fill="#38bdf8"/><text x="84" y="927">Home internet (wifi or cable)</text>
       <circle cx="560" cy="882" r="6" fill="#38bdf8"/><text x="576" y="889">Paid Claude subscription</text>
       <circle cx="560" cy="920" r="6" fill="#38bdf8"/><text x="576" y="927">Your phone for setup, no screen needed</text>
       <circle cx="1100" cy="882" r="6" fill="#a78bfa"/><text x="1116" y="889">Optional: Obsidian Sync subscription,</text>
       <text x="1116" y="917">to see your memory and notes</text><text x="1116" y="945">on your other devices</text>
+      <text x="60" y="968" font-size="17">* Set up Telegram before your SAM arrives. In South Africa Telegram sometimes asks a small fee (about R27) to send the sign-up SMS; if it does, we cover it.</text>
     </g>
   </g>
 </g>
